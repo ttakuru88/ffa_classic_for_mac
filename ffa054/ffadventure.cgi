@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 
 #--- [注意事項] ------------------------------------------------#
 # 1. このスクリプトはフリーソフトです。このスクリプトを使用した	#
@@ -412,7 +412,7 @@ EOM
 		print "$battle_date[$i]";
 		$i++;
 	}
-	
+
 	print "$comment<p>$knameは、<b>$exp</b>の経験値を手に入れた。<b>$gold</b>G手に入れた。<p>¥n";
 
 	&footer;
@@ -567,7 +567,7 @@ sub footer {
 		if($mode ne ""){
 			print "<a href=¥"$script¥">TOPページへ</a>¥n";
 		}
-		if($kid and $mode ne 'log_in' and $mode ne 'tensyoku' and $mode ne 'yado') { 
+		if($kid and $mode ne 'log_in' and $mode ne 'tensyoku' and $mode ne 'yado') {
 			print " / <a href=¥"$script?mode=log_in&id=$kid&pass=$kpass¥">ステータス画面へ</a>¥n";
 		}
 	}
@@ -691,7 +691,7 @@ sub header2 {
 <html>
 <head>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<META http-equiv="refresh" content="$refresh;URL=http¥:¥/¥/$wurl"> 
+<META http-equiv="refresh" content="$refresh;URL=http¥:¥/¥/$wurl">
 <STYLE type="text/css">
 <!--
 body,tr,td,th { font-size: $b_size }
@@ -1022,7 +1022,7 @@ sub log_in {
 	$vtime = $b_time - $ltime;
 	$mtime = $m_time - $ltime;
 	if($in{'id'} ne "$kid") {&error("オープンエラー、ID・パスワードが正しくありません。");}
-	
+
 	if(!$hit) { &error("入力されたIDは登録されていません。又はパスワードが違います。"); }
 
 	if($ksex) { $esex = "男"; } else { $esex = "女"; }
@@ -1481,7 +1481,7 @@ sub monster {
 	$vtime = $b_time - $ltime;
 	$mtime = $m_time - $ltime;
 	if($in{'id'} ne "$kid") {&error("オープンエラー、ID・パスワードが正しくありません。");}
-	
+
 	if($ltime < $m_time and $ktotal) {
 		&error("$mtime秒後闘えるようになります。<br>¥n");
 	}
@@ -1687,7 +1687,7 @@ EOM
 		print "$battle_date[$i]";
 		$i++;
 	}
-	
+
 	if($win) { print "$comment<p>$knameは、$mexの経験値を手に入れた。<b>$gold</b>G手に入れた。<p>¥n"; }
 	else { print "$comment<p>$knameは、$mexの経験値を手に入れた。お金が半分になった。<p>¥n"; }
 
