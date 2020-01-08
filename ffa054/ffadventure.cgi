@@ -1,30 +1,30 @@
 #!/usr/local/bin/perl
 
-#--- [’ˆÓ–€] ------------------------------------------------#
-# 1. ‚±‚ÌƒXƒNƒŠƒvƒg‚ÍƒtƒŠ[ƒ\ƒtƒg‚Å‚·B‚±‚ÌƒXƒNƒŠƒvƒg‚ğg—p‚µ‚½	#
-#    ‚¢‚©‚È‚é‘¹ŠQ‚É‘Î‚µ‚ÄìÒ‚ÍˆêØ‚ÌÓ”C‚ğ•‰‚¢‚Ü‚¹‚ñB		#
-# 2. İ’u‚ÉŠÖ‚·‚é¿–â‚ÍƒTƒ|[ƒgŒf¦”Â‚É‚¨Šè‚¢‚¢‚½‚µ‚Ü‚·B	#
-#    ’¼Úƒ[ƒ‹‚É‚æ‚é¿–â‚ÍˆêØ‚¨ó‚¯‚¢‚½‚µ‚Ä‚¨‚è‚Ü‚¹‚ñB	#
+#--- [æ³¨æ„äº‹é …] ------------------------------------------------#
+# 1. ã“ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã¯ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã§ã™ã€‚ã“ã®ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ä½¿ç”¨ã—ãŸ	#
+#    ã„ã‹ãªã‚‹æå®³ã«å¯¾ã—ã¦ä½œè€…ã¯ä¸€åˆ‡ã®è²¬ä»»ã‚’è² ã„ã¾ã›ã‚“ã€‚		#
+# 2. è¨­ç½®ã«é–¢ã™ã‚‹è³ªå•ã¯ã‚µãƒãƒ¼ãƒˆæ²ç¤ºæ¿ã«ãŠé¡˜ã„ã„ãŸã—ã¾ã™ã€‚	#
+#    ç›´æ¥ãƒ¡ãƒ¼ãƒ«ã«ã‚ˆã‚‹è³ªå•ã¯ä¸€åˆ‡ãŠå—ã‘ã„ãŸã—ã¦ãŠã‚Šã¾ã›ã‚“ã€‚	#
 #---------------------------------------------------------------#
 
-# “ú–{Œêƒ‰ƒCƒuƒ‰ƒŠ‚Ì“Ç‚İ‚İ
+# æ—¥æœ¬èªãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®èª­ã¿è¾¼ã¿
 require 'jcode.pl';
 
-# ‰Šúİ’èƒtƒ@ƒCƒ‹‚Ì“Ç‚İ‚İ
+# åˆæœŸè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã®èª­ã¿è¾¼ã¿
 require 'ffadventure.ini';
 
 
 
 #================================================================#
-#„¬„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„­#
-#„« ‚±‚ê‚æ‚è‰º‚ÍCGI‚É©M‚Ì‚ ‚é•ûˆÈŠO‚Íˆµ‚í‚È‚¢‚Ù‚¤‚ª–³“ï‚Å‚·@„«#
-#„¯„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„®#
+#â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“#
+#â”ƒ ã“ã‚Œã‚ˆã‚Šä¸‹ã¯CGIã«è‡ªä¿¡ã®ã‚ã‚‹æ–¹ä»¥å¤–ã¯æ‰±ã‚ãªã„ã»ã†ãŒç„¡é›£ã§ã™ã€€â”ƒ#
+#â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›#
 #================================================================#
 
 #--------------#
-#@ƒƒCƒ“ˆ—@#
+#ã€€ãƒ¡ã‚¤ãƒ³å‡¦ç†ã€€#
 #--------------#
-if($mente) { &error("Œ»İƒƒ“ƒeƒiƒ“ƒX’†‚Å‚·B‚µ‚Î‚ç‚­‚¨‘Ò‚¿‚­‚¾‚³‚¢B"); }
+if($mente) { &error("ç¾åœ¨ãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ä¸­ã§ã™ã€‚ã—ã°ã‚‰ããŠå¾…ã¡ãã ã•ã„ã€‚"); }
 &decode;
 &max_strings;
 
@@ -43,7 +43,7 @@ elsif($mode eq 'item_shop') { &item_shop; }
 elsif($mode eq 'item_buy') { &item_buy; }
 &html_top;
 #------------#
-#  í“¬‰æ–Ê  #
+#  æˆ¦é—˜ç”»é¢  #
 #------------#
 sub battle {
 
@@ -55,24 +55,24 @@ sub battle {
 		($kid,$kpass,$ksite,$kurl,$kname,$ksex,$kchara,$kn_0,$kn_1,$kn_2,$kn_3,$kn_4,$kn_5,$kn_6,$ksyoku,$kclass,$khp,$kmaxhp,$kex,$klv,$kgold,$klp,$ktotal,$kkati,$kwaza,$ki_name,$ki_dmg,$kmons,$khost,$kdate) = split(/<>/);
 		if($in{'id'} eq "$kid") { last; }
 	}
-	if (($in{'id'} ne $kid) or ($in{'pass'} ne $kpass)) {&error('IDAƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·');}
+	if (($in{'id'} ne $kid) or ($in{'pass'} ne $kpass)) {&error('IDã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™');}
 
 	$ltime = time();
 	$ltime = $ltime - $kdate;
 	$vtime = $b_time - $ltime;
 	$mtime = $m_time - $ltime;
-	if($in{'id'} ne "$kid") {&error("ƒI[ƒvƒ“ƒGƒ‰[AIDEƒpƒXƒ[ƒh‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB");}
+	if($in{'id'} ne "$kid") {&error("ã‚ªãƒ¼ãƒ—ãƒ³ã‚¨ãƒ©ãƒ¼ã€IDãƒ»ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚");}
 
 	if($ltime < $b_time and $ktotal) {
-		&error("$vtime•bŒã“¬‚¦‚é‚æ‚¤‚É‚È‚è‚Ü‚·B\n");
+		&error("$vtimeç§’å¾Œé—˜ãˆã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚Â¥n");
 	}
 
 	&read_winner;
 
-	if($wid eq $kid) { &error("Œ»İƒ`ƒƒƒ“ƒv‚È‚Ì‚Å“¬‚¦‚Ü‚¹‚ñB"); }
+	if($wid eq $kid) { &error("ç¾åœ¨ãƒãƒ£ãƒ³ãƒ—ãªã®ã§é—˜ãˆã¾ã›ã‚“ã€‚"); }
 
 	if($chanp_milit) {
-		if($kurl eq $lurl) { &error("ƒ`ƒƒƒ“ƒv‚ª•Ï‚í‚é‚Ü‚Å“¬‚¦‚Ü‚¹‚ñB"); }
+		if($kurl eq $lurl) { &error("ãƒãƒ£ãƒ³ãƒ—ãŒå¤‰ã‚ã‚‹ã¾ã§é—˜ãˆã¾ã›ã‚“ã€‚"); }
 	}
 
 	if($in{'site'}) { $ksite = $in{'site'}; }
@@ -95,9 +95,9 @@ sub battle {
 
 		$hissatu_c = -1;
 
-			# ’§íÒƒ_ƒ[ƒWŒvZ
-				if($ki_name) { $com1 = "$kname‚Í$ki_name‚ÅUŒ‚II<p>"; }
-				else { $com1 = "$kname‚ÌUŒ‚II<p>"; }
+			# æŒ‘æˆ¦è€…ãƒ€ãƒ¡ãƒ¼ã‚¸è¨ˆç®—
+				if($ki_name) { $com1 = "$knameã¯$ki_nameã§æ”»æ’ƒï¼ï¼<p>"; }
+				else { $com1 = "$knameã®æ”»æ’ƒï¼ï¼<p>"; }
 			if($ksyoku == 0){
 				if(0 == int(rand($waza_ritu))) {
 					$hissatu_c = 0;
@@ -183,14 +183,14 @@ sub battle {
 				}
 				$dmg1 = $dmg1 + int(rand($kn_0)) + int(rand($kn_2)) + $ki_dmg;
 			}
-			if ($hissatu_c >= 0 ) { # •ÏX‚ğ”»’èB
-				$com1 .= "<font size=5>$knameu<b>$kwaza</b>v</font><p><font color=\"#CC6699\" size=5><b>$hissatu[$hissatu_c]</b></font>\n";
+			if ($hissatu_c >= 0 ) { # å¤‰æ›´ã‚’åˆ¤å®šã€‚
+				$com1 .= "<font size=5>$knameã€Œ<b>$kwaza</b>ã€</font><p><font color=Â¥"#CC6699Â¥" size=5><b>$hissatu[$hissatu_c]</b></font>Â¥n";
 			}
 
-			# ƒ`ƒƒƒ“ƒvƒ_ƒ[ƒWŒvZ
+			# ãƒãƒ£ãƒ³ãƒ—ãƒ€ãƒ¡ãƒ¼ã‚¸è¨ˆç®—
 
-		if($wi_name){ $com2 = "$wname‚ÍA$wi_name‚ÅUŒ‚II"; }
-		else{ $com2 = "$wname‚ÌUŒ‚II<p>"; }
+		if($wi_name){ $com2 = "$wnameã¯ã€$wi_nameã§æ”»æ’ƒï¼ï¼"; }
+		else{ $com2 = "$wnameã®æ”»æ’ƒï¼ï¼<p>"; }
 			if($wsyoku == 0){
 				$dmg2 = $dmg2 + int(rand($wn_0)) + $wi_dmg;
 			}elsif($wsyoku == 1){
@@ -222,18 +222,18 @@ sub battle {
 			}
 
 			if(int(rand(20)) == 0) {
-				$clit1 = "<b class=\"clit\">ƒNƒŠƒeƒBƒJƒ‹II</b>";
+				$clit1 = "<b class=Â¥"clitÂ¥">ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ï¼ï¼</b>";
 				$dmg1 = $dmg1 * 2;
 			}
 
 			if(int(rand(30)) == 0) {
-				$clit2 = "<font size=5>$wnameu<b>$wwaza</b>v</font><p><b class=\"clit\">ƒNƒŠƒeƒBƒJƒ‹II</b>";
+				$clit2 = "<font size=5>$wnameã€Œ<b>$wwaza</b>ã€</font><p><b class=Â¥"clitÂ¥">ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ï¼ï¼</b>";
 				$dmg2 = int($dmg2 * 1.5);
 			}
 
 			if(($wlv - $klv) >= $level_sa and $i == 1) {
 				$sa = $wlv - $klv;
-				$clit1 .= "<p><font size=5><b>$kname‚Ì‘Ì‚©‚çÂ‚¢‰Š‚Ì‚æ‚¤‚È‚à‚Ì‚ª—N‚«ã‚ª‚éEEEB</b></font>";
+				$clit1 .= "<p><font size=5><b>$knameã®ä½“ã‹ã‚‰é’ã„ç‚ã®ã‚ˆã†ãªã‚‚ã®ãŒæ¹§ãä¸ŠãŒã‚‹ãƒ»ãƒ»ãƒ»ã€‚</b></font>";
 				$dmg1 = $dmg1 + $kmaxhp;
 			}
 
@@ -241,7 +241,7 @@ sub battle {
 <TABLE BORDER=0>
 <TR>
 	<TD CLASS="b2" COLSPAN="3" ALIGN="center">
-	$iƒ^[ƒ“
+	$iã‚¿ãƒ¼ãƒ³
 	</TD>
 </TR>
 <TR>
@@ -258,13 +258,13 @@ sub battle {
 <TABLE BORDER=1>
 <TR>
 	<TD CLASS="b1">
-	‚È‚Ü‚¦
+	ãªã¾ãˆ
 	</TD>
 	<TD CLASS="b1">
 	HP
 	</TD>
 	<TD CLASS="b1">
-	E‹Æ
+	è·æ¥­
 	</TD>
 	<TD CLASS="b1">
 	LV
@@ -275,7 +275,7 @@ sub battle {
 	$kname
 	</TD>
 	<TD>
-	$khp_flg\/$kmaxhp
+	$khp_flgÂ¥/$kmaxhp
 	</TD>
 	<TD>
 	$chara_syoku[$ksyoku]
@@ -293,13 +293,13 @@ sub battle {
 <TABLE BORDER=1>
 <TR>
 	<TD CLASS="b1">
-	‚È‚Ü‚¦
+	ãªã¾ãˆ
 	</TD>
 	<TD CLASS="b1">
 	HP
 	</TD>
 	<TD CLASS="b1">
-	E‹Æ
+	è·æ¥­
 	</TD>
 	<TD CLASS="b1">
 	LV
@@ -310,7 +310,7 @@ sub battle {
 	$wname
 	</TD>
 	<TD>
-	$whp_flg\/$wmaxhp
+	$whp_flgÂ¥/$wmaxhp
 	</TD>
 	<TD>
 	$chara_syoku[$wsyoku]
@@ -324,8 +324,8 @@ sub battle {
 </TR>
 </TABLE>
 <p>
-$com1 $clit1 $kawasi2 $wname ‚É <font class="dmg"><b>$dmg1</b></font> ‚Ìƒ_ƒ[ƒW‚ğ—^‚¦‚½B<p>
-$com2 $clit2 $kawasi1 $kname ‚É <font class="dmg"><b>$dmg2</b></font> ‚Ìƒ_ƒ[ƒW‚ğ—^‚¦‚½B<p>
+$com1 $clit1 $kawasi2 $wname ã« <font class="dmg"><b>$dmg1</b></font> ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’ä¸ãˆãŸã€‚<p>
+$com2 $clit2 $kawasi1 $kname ã« <font class="dmg"><b>$dmg2</b></font> ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’ä¸ãˆãŸã€‚<p>
 EOM
 
 		$khp_flg = $khp_flg - $dmg2;
@@ -345,14 +345,14 @@ EOM
 		$kex = $kex + $exp;
 		$gold = $wlv * 10 + int(rand($klp));
 		$kmons = $sentou_limit;
-		$comment = "<b><font size=5>$kname‚ÍAí“¬‚ÉŸ—˜‚µ‚½II</font></b><p>";
+		$comment = "<b><font size=5>$knameã¯ã€æˆ¦é—˜ã«å‹åˆ©ã—ãŸï¼ï¼</font></b><p>";
 	}else{
 		$ktotal += 1;
 		$exp = int($wlv * (rand($klp) + 1));
 		$kex = $kex + $exp;
 		$gold = int(rand($klp));
 		$kmons = $sentou_limit;
-		$comment = "<b><font size=5>$kname‚ÍAí“¬‚É•‰‚¯‚½EEEB</font></b><p>";
+		$comment = "<b><font size=5>$knameã¯ã€æˆ¦é—˜ã«è² ã‘ãŸãƒ»ãƒ»ãƒ»ã€‚</font></b><p>";
 	}
 
 	if($kex >= ($klv * $lv_up)) { &lv_up; }
@@ -365,7 +365,7 @@ EOM
 	if($whp <= 0) { $whp = $wmaxhp; }
 	$kgold = $kgold + $gold;
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -373,7 +373,7 @@ EOM
 		@new=();
 		open(OUT,">$winner_file");
 		@winnew = <IN>;
-		unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>$win<>$wsite<>$wurl<>$wname<>\n");
+		unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>$win<>$wsite<>$wurl<>$wname<>Â¥n");
 		print OUT @new;
 		close(OUT);
 	}else{
@@ -381,7 +381,7 @@ EOM
 		@new=();
 		open(OUT,">$winner_file");
 		@winnew = <IN>;
-		unshift(@new,"$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$whp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$ksite<>$kurl<>$kname<>\n");
+		unshift(@new,"$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$whp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$ksite<>$kurl<>$kname<>Â¥n");
 		print OUT @new;
 		close(OUT);
 
@@ -393,19 +393,19 @@ EOM
 
 		if($wcount > $count) {
 			open(OUT,">$recode_file");
-			print OUT "$wcount<>$wname<>$wsite<>$wurl<>\n";
+			print OUT "$wcount<>$wname<>$wsite<>$wurl<>Â¥n";
 			close(OUT);
 		}
 	}
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&regist;
 
 	if($refresh and !$win) { &header2; } else { &header; }
 
-	print "<h1>$kname‚ÍA$wname‚Éí‚¢‚ğ’§‚ñ‚¾II</h1><hr size=0><p>\n";
+	print "<h1>$knameã¯ã€$wnameã«æˆ¦ã„ã‚’æŒ‘ã‚“ã ï¼ï¼</h1><hr size=0><p>Â¥n";
 
 	$i=0;
 	foreach(@battle_date){
@@ -413,167 +413,167 @@ EOM
 		$i++;
 	}
 	
-	print "$comment<p>$kname‚ÍA<b>$exp</b>‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½B<b>$gold</b>Gè‚É“ü‚ê‚½B<p>\n";
+	print "$comment<p>$knameã¯ã€<b>$exp</b>ã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸã€‚<b>$gold</b>Gæ‰‹ã«å…¥ã‚ŒãŸã€‚<p>Â¥n";
 
 	&footer;
 
 	exit;
 }
 #----------------------#
-#  ƒLƒƒƒ‰ƒNƒ^ì¬‰æ–Ê  #
+#  ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ä½œæˆç”»é¢  #
 #----------------------#
 sub chara_make {
-	# ƒwƒbƒ_[•\¦
+	# ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤º
 	&header;
 
 	print <<"EOM";
-<h1>ƒLƒƒƒ‰ƒNƒ^ì¬‰æ–Ê</h1>
+<h1>ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ä½œæˆç”»é¢</h1>
 <hr size=0>
 <form action="$script" method="post">
 <input type="hidden" name="mode" value="make_end">
 <table border=1>
 <tr>
 <td class="b1">ID</td>
-<td><input type="text" name="id" size="10"><br><small>¢‚¨D‚«‚È”¼Šp‰p”š‚ğ4`8•¶šˆÈ“à‚Å‚²‹L“ü‚­‚¾‚³‚¢B</small></td>
+<td><input type="text" name="id" size="10"><br><small>â–³ãŠå¥½ããªåŠè§’è‹±æ•°å­—ã‚’4ã€œ8æ–‡å­—ä»¥å†…ã§ã”è¨˜å…¥ãã ã•ã„ã€‚</small></td>
 </tr>
 <tr>
-<td class="b1">ƒpƒXƒ[ƒh</td>
-<td><input type="password" name="pass" size="10"><br><small>¢‚¨D‚«‚È”¼Šp‰p”š‚ğ4`8•¶šˆÈ“à‚Å‚²‹L“ü‚­‚¾‚³‚¢B</small></td>
+<td class="b1">ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰</td>
+<td><input type="password" name="pass" size="10"><br><small>â–³ãŠå¥½ããªåŠè§’è‹±æ•°å­—ã‚’4ã€œ8æ–‡å­—ä»¥å†…ã§ã”è¨˜å…¥ãã ã•ã„ã€‚</small></td>
 </tr>
 <tr>
-<td class="b1">ƒz[ƒ€ƒy[ƒW–¼</td>
-<td><input type="text" name="site" size="40"><br><small>¢‚ ‚È‚½‚Ìƒz[ƒ€ƒy[ƒW‚Ì–¼‘O‚ğ”¼Šp$site_maxs•¶šˆÈ“à‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B</small></td>
+<td class="b1">ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸å</td>
+<td><input type="text" name="site" size="40"><br><small>â–³ã‚ãªãŸã®ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®åå‰ã‚’åŠè§’$site_maxsæ–‡å­—ä»¥å†…ã§å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚</small></td>
 </tr>
 <tr>
 <td class="b1">URL</td>
-<td><input type="text" name="url" size="50" value="http://"><br><small>¢‚ ‚È‚½‚Ìƒz[ƒ€ƒy[ƒW‚ÌƒAƒhƒŒƒX‚ğ”¼Šp$url_maxs•¶šˆÈ“à‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢B</small></td>
+<td><input type="text" name="url" size="50" value="http://"><br><small>â–³ã‚ãªãŸã®ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’åŠè§’$url_maxsæ–‡å­—ä»¥å†…ã§è¨˜å…¥ã—ã¦ãã ã•ã„ã€‚</small></td>
 </tr>
 <tr>
-<td class="b1">ƒLƒƒƒ‰ƒNƒ^[‚Ì–¼‘O</td>
-<td><input type="text" name="c_name" size="30"><br><small>¢ì¬‚·‚éƒLƒƒƒ‰ƒNƒ^[‚Ì–¼‘O‚ğ”¼Šp$name_maxs•¶šˆÈ“à‚Å“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B</small></td>
+<td class="b1">ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®åå‰</td>
+<td><input type="text" name="c_name" size="30"><br><small>â–³ä½œæˆã™ã‚‹ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®åå‰ã‚’åŠè§’$name_maxsæ–‡å­—ä»¥å†…ã§å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚</small></td>
 </tr>
 <tr>
-<td class="b1">ƒLƒƒƒ‰ƒNƒ^[‚Ì«•Ê</td>
-<td><input type="radio" name="sex" value="0">—@<input type="radio" name="sex" value="1">’j<br><small>¢ì¬‚·‚éƒLƒƒƒ‰ƒNƒ^[‚Ì«•Ê‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B</small></td>
+<td class="b1">ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®æ€§åˆ¥</td>
+<td><input type="radio" name="sex" value="0">å¥³ã€€<input type="radio" name="sex" value="1">ç”·<br><small>â–³ä½œæˆã™ã‚‹ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®æ€§åˆ¥ã‚’é¸æŠã—ã¦ãã ã•ã„ã€‚</small></td>
 </tr>
 <tr>
-<td class="b1">ƒLƒƒƒ‰ƒNƒ^[‚ÌƒCƒ[ƒW</td>
+<td class="b1">ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ã‚¤ãƒ¡ãƒ¼ã‚¸</td>
 <td><select name="chara">
 EOM
 
 	$i=0;
 	foreach(@chara_name){
-		print "<option value=\"$i\">$chara_name[$i]\n";
+		print "<option value=Â¥"$iÂ¥">$chara_name[$i]Â¥n";
 		$i++;
 	}
 
 	print <<"EOM";
-</select><br><small>¢ì¬‚·‚éƒLƒƒƒ‰ƒNƒ^[‚Ì‰æ‘œ‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B(<a href="$chara_list" target="_blank">‰æ‘œˆê——</a>)</small></td>
+</select><br><small>â–³ä½œæˆã™ã‚‹ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ç”»åƒã‚’é¸æŠã—ã¦ãã ã•ã„ã€‚(<a href="$chara_list" target="_blank">ç”»åƒä¸€è¦§</a>)</small></td>
 </tr>
 <tr>
-<td class="b1">ƒLƒƒƒ‰ƒNƒ^[‚Ì”\\—Í</td>
+<td class="b1">ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®èƒ½Â¥åŠ›</td>
 <td>
 	<table border=1>
 	<tr>
-	<td class="b2" width="70">—Í</td><td class="b2" width="70">’m”\\</td><td class="b2" width="70">M‹ÂS</td><td class="b2" width="70">¶–½—Í</td><td class="b2" width="70">Ší—p‚³</td><td class="b2" width="70">‘¬‚³</td><td class="b2" width="70">–£—Í</td>
+	<td class="b2" width="70">åŠ›</td><td class="b2" width="70">çŸ¥èƒ½Â¥</td><td class="b2" width="70">ä¿¡ä»°å¿ƒ</td><td class="b2" width="70">ç”Ÿå‘½åŠ›</td><td class="b2" width="70">å™¨ç”¨ã•</td><td class="b2" width="70">é€Ÿã•</td><td class="b2" width="70">é­…åŠ›</td>
 	</tr>
 	<tr>
 EOM
 
 	$i=0;$j=0;
 	foreach(0..6){
-		print "<td>$kiso_nouryoku[$i] + <select name=n_$i>\n";
+		print "<td>$kiso_nouryoku[$i] + <select name=n_$i>Â¥n";
 		foreach(0..10){
-			print "<option value=\"$j\">$j\n";
+			print "<option value=Â¥"$jÂ¥">$jÂ¥n";
 			$j++;
 		}
-		print "</select>\n";
-		print "</td>\n";
+		print "</select>Â¥n";
+		print "</td>Â¥n";
 		$i++;$j=0;
 	}
 
 	print <<"EOM";
 	</tr>
 	</table>
-<small>¢ƒ{[ƒiƒXƒ|ƒCƒ“ƒgu<b>10</b>v‚ğ‚»‚ê‚¼‚ê‚ÉU‚è•ª‚¯‚Ä‚­‚¾‚³‚¢B(U‚è•ª‚¯‚½‡Œv‚ª10ˆÈ‰º‚É‚È‚é‚æ‚¤‚ÉB)</small>
+<small>â–³ãƒœãƒ¼ãƒŠã‚¹ãƒã‚¤ãƒ³ãƒˆã€Œ<b>10</b>ã€ã‚’ãã‚Œãã‚Œã«æŒ¯ã‚Šåˆ†ã‘ã¦ãã ã•ã„ã€‚(æŒ¯ã‚Šåˆ†ã‘ãŸåˆè¨ˆãŒ10ä»¥ä¸‹ã«ãªã‚‹ã‚ˆã†ã«ã€‚)</small>
 </td>
 </tr>
 <tr>
-<td colspan="2" align="center"><input type="submit" value="‚±‚ê‚Å“o˜^"></td>
+<td colspan="2" align="center"><input type="submit" value="ã“ã‚Œã§ç™»éŒ²"></td>
 </tr>
 </table>
 </form>
 EOM
 
-	# ƒtƒbƒ^[•\¦
+	# ãƒ•ãƒƒã‚¿ãƒ¼è¡¨ç¤º
 	&footer;
 
 	exit;
 }
 #----------------#
-#  ƒfƒR[ƒhˆ—  #
+#  ãƒ‡ã‚³ãƒ¼ãƒ‰å‡¦ç†  #
 #----------------#
 sub decode {
 	if ($ENV{'REQUEST_METHOD'} eq "POST") {
-		if ($ENV{'CONTENT_LENGTH'} > 51200) { &error("“Še—Ê‚ª‘å‚«‚·‚¬‚Ü‚·"); }
+		if ($ENV{'CONTENT_LENGTH'} > 51200) { &error("æŠ•ç¨¿é‡ãŒå¤§ãã™ãã¾ã™"); }
 		read(STDIN, $buffer, $ENV{'CONTENT_LENGTH'});
 	} else { $buffer = $ENV{'QUERY_STRING'}; }
 	@pairs = split(/&/, $buffer);
 	foreach (@pairs) {
 		($name,$value) = split(/=/, $_);
-		$value =~ tr/+/ /;
-		$value =~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
+		$value =â€¾ tr/+/ /;
+		$value =â€¾ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
 
-		# •¶šƒR[ƒh‚ğƒVƒtƒgJIS•ÏŠ·
+		# æ–‡å­—ã‚³ãƒ¼ãƒ‰ã‚’ã‚·ãƒ•ãƒˆJISå¤‰æ›
 		&jcode'convert(*value, "sjis", "", "z");
 
-		# ƒ^ƒOˆ—
-		$value =~ s/</&lt;/g;
-		$value =~ s/>/&gt;/g;
-		$value =~ s/\"/&quot;/g;
+		# ã‚¿ã‚°å‡¦ç†
+		$value =â€¾ s/</&lt;/g;
+		$value =â€¾ s/>/&gt;/g;
+		$value =â€¾ s/Â¥"/&quot;/g;
 
-		# ‰üs“™ˆ—
-		$value =~ s/\r//g;
-		$value =~ s/\n//g;
+		# æ”¹è¡Œç­‰å‡¦ç†
+		$value =â€¾ s/Â¥r//g;
+		$value =â€¾ s/Â¥n//g;
 
 		$in{$name} = $value;
 	}
 	$mode = $in{'mode'};
-	$in{'url'} =~ s/^http\:\/\///;
+	$in{'url'} =â€¾ s/^httpÂ¥:Â¥/Â¥///;
 	$cookie_pass = $in{'pass'};
 	$cookie_id = $in{'id'};
 }
 #--------------#
-#  ƒGƒ‰[ˆ—  #
+#  ã‚¨ãƒ©ãƒ¼å‡¦ç†  #
 #--------------#
 sub error {
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&header;
-	print "<center><hr width=400><h3>ERROR !</h3>\n";
-	print "<P><font color=red><B>$_[0]</B></font>\n";
-	print "<P><hr width=400></center>\n";
-	print "</body></html>\n";
+	print "<center><hr width=400><h3>ERROR !</h3>Â¥n";
+	print "<P><font color=red><B>$_[0]</B></font>Â¥n";
+	print "<P><hr width=400></center>Â¥n";
+	print "</body></html>Â¥n";
 	exit;
 }
 #------------------#
-#@HTML‚Ìƒtƒbƒ^[@#
+#ã€€HTMLã®ãƒ•ãƒƒã‚¿ãƒ¼ã€€#
 #------------------#
 sub footer {
 	if($refresh and !$win and $mode eq 'battle') {
-		print "y<b><a href=\"http\:\/\/$wurl\">ƒ`ƒƒƒ“ƒv‚Ìƒz[ƒ€ƒy[ƒW‚Ö</a></b>z\n";
+		print "ã€<b><a href=Â¥"httpÂ¥:Â¥/Â¥/$wurlÂ¥">ãƒãƒ£ãƒ³ãƒ—ã®ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã¸</a></b>ã€‘Â¥n";
 	}else{
 		if($mode ne ""){
-			print "<a href=\"$script\">TOPƒy[ƒW‚Ö</a>\n";
+			print "<a href=Â¥"$scriptÂ¥">TOPãƒšãƒ¼ã‚¸ã¸</a>Â¥n";
 		}
 		if($kid and $mode ne 'log_in' and $mode ne 'tensyoku' and $mode ne 'yado') { 
-			print " / <a href=\"$script?mode=log_in&id=$kid&pass=$kpass\">ƒXƒe[ƒ^ƒX‰æ–Ê‚Ö</a>\n";
+			print " / <a href=Â¥"$script?mode=log_in&id=$kid&pass=$kpassÂ¥">ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢ã¸</a>Â¥n";
 		}
 	}
-	print "<HR SIZE=0 WIDTH=\"100%\"><DIV align=right class=small>\n";
-	print "$ver by <a href=\"http://www.smat.ne.jp/~ffa/index.html\">FFAŠJ”­º</a><br>\n";
-	print "</DIV>\n";
+	print "<HR SIZE=0 WIDTH=Â¥"100%Â¥"><DIV align=right class=small>Â¥n";
+	print "$ver by <a href=Â¥"http://www.smat.ne.jp/â€¾ffa/index.htmlÂ¥">FFAé–‹ç™ºå®¤</a><br>Â¥n";
+	print "</DIV>Â¥n";
 
 	if($mode eq 'log_in' and $ltime < $b_time and $ktotal){
 	print <<"EOM";
@@ -584,19 +584,19 @@ window.setTimeout('CountDown()',100);
 </SCRIPT>
 EOM
 	}
-	print "</body></html>\n";
+	print "</body></html>Â¥n";
 }
 #------------------#
-#  ƒNƒbƒL[‚ğæ“¾  #
+#  ã‚¯ãƒƒã‚­ãƒ¼ã‚’å–å¾—  #
 #------------------#
 sub get_cookie {
 	@pairs = split(/;/, $ENV{'HTTP_COOKIE'});
 	foreach (@pairs) {
 		local($key,$val) = split(/=/);
-		$key =~ s/\s//g;
+		$key =â€¾ s/Â¥s//g;
 		$GET{$key} = $val;
 	}
-	@pairs = split(/\,/, $GET{'FFADV'});
+	@pairs = split(/Â¥,/, $GET{'FFADV'});
 	foreach (@pairs) {
 		local($key,$val) = split(/<>/);
 		$COOK{$key} = $val;
@@ -605,7 +605,7 @@ sub get_cookie {
 	$c_pass = $COOK{'pass'};
 }
 #----------------#
-#  ƒzƒXƒg–¼æ“¾  #
+#  ãƒ›ã‚¹ãƒˆåå–å¾—  #
 #----------------#
 sub get_host {
 	$addr = $ENV{'REMOTE_ADDR'};
@@ -613,37 +613,37 @@ sub get_host {
 	if ($get_remotehost) {
 		$host = $ENV{'REMOTE_HOST'};
 		if ($host eq "" || $host eq "$addr") {
-			$host = gethostbyaddr(pack("C4", split(/\./, $addr)), 2);
+			$host = gethostbyaddr(pack("C4", split(/Â¥./, $addr)), 2);
 		}
 	}
 
 	if ($host eq "") { $host = $addr; }
 }
 #--------------#
-#  ŠÔ‚ğæ“¾  #
+#  æ™‚é–“ã‚’å–å¾—  #
 #--------------#
 sub get_time {
 	$ENV{'TZ'} = "JST-9";
 	($sec,$min,$hour,$mday,$mon,$year,$wday) = localtime(time);
 	@week = ('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
 
-	# “ú‚ÌƒtƒH[ƒ}ƒbƒg
+	# æ—¥æ™‚ã®ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆ
 	$gettime = sprintf("%04d/%02d/%02d %02d:%02d",
 			$year+1900,$mon+1,$mday,$hour,$min);
 }
 #------------------#
-#  HTML‚Ìƒwƒbƒ_[  #
+#  HTMLã®ãƒ˜ãƒƒãƒ€ãƒ¼  #
 #------------------#
 sub header {
-	print "Cache-Control: no-cache\n";
-	print "Pragma: no-cache\n";
-	print "Content-type: text/html\n\n";
+	print "Cache-Control: no-cacheÂ¥n";
+	print "Pragma: no-cacheÂ¥n";
+	print "Content-type: text/htmlÂ¥nÂ¥n";
 	print <<"EOM";
 <html>
 <head>
 <META name="robots" content="noindex,nofollow">
 <META name="robots" content="noarchive">
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=Shift_JIS">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 EOM
 
 if($mode eq 'log_in' and $ltime < $b_time and $ktotal){
@@ -679,19 +679,19 @@ a:hover { color: $alink }
 -->
 </STYLE>
 EOM
-	print "<title>$main_title</title></head>\n";
-	print "<body background=\"$backgif\" bgcolor=\"$bgcolor\" text=\"$text\" link=\"$link\" vlink=\"$vlink\" alink=\"$alink\">\n";
+	print "<title>$main_title</title></head>Â¥n";
+	print "<body background=Â¥"$backgifÂ¥" bgcolor=Â¥"$bgcolorÂ¥" text=Â¥"$textÂ¥" link=Â¥"$linkÂ¥" vlink=Â¥"$vlinkÂ¥" alink=Â¥"$alinkÂ¥">Â¥n";
 }
 #--------------#
-#  ‹­§‘—ŠÒ—p  #
+#  å¼·åˆ¶é€é‚„ç”¨  #
 #--------------#
 sub header2 {
-	print "Content-type: text/html\n\n";
+	print "Content-type: text/htmlÂ¥nÂ¥n";
 	print <<"EOM";
 <html>
 <head>
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=Shift_JIS">
-<META http-equiv="refresh" content="$refresh;URL=http\:\/\/$wurl"> 
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<META http-equiv="refresh" content="$refresh;URL=httpÂ¥:Â¥/Â¥/$wurl"> 
 <STYLE type="text/css">
 <!--
 body,tr,td,th { font-size: $b_size }
@@ -705,11 +705,11 @@ a:hover { color: $alink }
 -->
 </STYLE>
 EOM
-	print "<title>$main_title</title></head>\n";
-	print "<body background=\"$backgif\" bgcolor=\"$bgcolor\" text=\"$text\" link=\"$link\" vlink=\"$vlink\" alink=\"$alink\">\n";
+	print "<title>$main_title</title></head>Â¥n";
+	print "<body background=Â¥"$backgifÂ¥" bgcolor=Â¥"$bgcolorÂ¥" text=Â¥"$textÂ¥" link=Â¥"$linkÂ¥" vlink=Â¥"$vlinkÂ¥" alink=Â¥"$alinkÂ¥">Â¥n";
 }
 #-----------------#
-#  TOPƒy[ƒW•\¦  #
+#  TOPãƒšãƒ¼ã‚¸è¡¨ç¤º  #
 #-----------------#
 sub html_top {
 	&read_winner;
@@ -725,15 +725,15 @@ sub html_top {
 
 	($rcount,$rname,$rsite,$rurl) = split(/<>/,$recode[0]);
 
-	if($wsex) { $esex = "’j"; } else { $esex = "—"; }
+	if($wsex) { $esex = "ç”·"; } else { $esex = "å¥³"; }
 	$next_ex = $wlv * $lv_up;
 
-	if(!$wi_name){ $wi_name = "‚È‚µ"; }
+	if(!$wi_name){ $wi_name = "ãªã—"; }
 
-	# ƒwƒbƒ_[•\¦
+	# ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤º
 	&header;
 
-	# HTML‚Ì•\¦
+	# HTMLã®è¡¨ç¤º
 	print <<"EOM";
 <form action="$script" method="get">
 <input type="hidden" name="mode" value="log_in">
@@ -743,14 +743,14 @@ sub html_top {
 <td align="right" valign="top">
 	<table border=1>
 	<tr>
-	<td align=center colspan=5 class=b2>ƒLƒƒƒ‰ƒNƒ^[‚ğì¬Ï‚İ‚Ì•û‚Í‚±‚¿‚ç‚©‚ç</td>
+	<td align=center colspan=5 class=b2>ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’ä½œæˆæ¸ˆã¿ã®æ–¹ã¯ã“ã¡ã‚‰ã‹ã‚‰</td>
 	</tr>
 	<tr>
 	<td class=b1>I D</td>
 	<td><input type="text" size="10" name="id" value="$c_id"></td>
-	<td class=b1>ƒpƒXƒ[ƒh</td>
+	<td class=b1>ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰</td>
 	<td><input type="password" size="10" name="pass" value="$c_pass"></td>
-	<td><input type="submit" value="ƒƒOƒCƒ“"></td>
+	<td><input type="submit" value="ãƒ­ã‚°ã‚¤ãƒ³"></td>
 	</tr>
 	</table>
 </td>
@@ -758,83 +758,83 @@ sub html_top {
 </table>
 <hr size=0>
 <small>
-/ <a href="$homepage">$home_title</a> / <a href="$script?mode=item_shop">•Ší‰®</a> / <a href="$script?mode=ranking">‰p—Y‚½‚¿‚Ì‹L˜^</a> / <a href="$syoku_html">ŠeE‹Æ‚É•K—v‚È“Á«’l</a> /
+/ <a href="$homepage">$home_title</a> / <a href="$script?mode=item_shop">æ­¦å™¨å±‹</a> / <a href="$script?mode=ranking">è‹±é›„ãŸã¡ã®è¨˜éŒ²</a> / <a href="$syoku_html">å„è·æ¥­ã«å¿…è¦ãªç‰¹æ€§å€¤</a> /
 </form>
 $kanri_message
 <p>
-Œ»İ‚Ì˜AŸ‹L˜^‚ÍA$rname‚³‚ñ‚Ìu<A HREF=\"http\:\/\/$rurl\" TARGET=\"_blank\"><FONT SIZE=\"3\" COLOR=\"#6666BB\">$rsite</FONT></A>vA$rcount˜AŸ‚Å‚·BV‹L˜^‚ğo‚µ‚½ƒTƒCƒg–¼‚Ì‰¡‚É‚ÍA<IMG SRC="$mark">ƒ}[ƒN‚ª‚Â‚«‚Ü‚·B
+ç¾åœ¨ã®é€£å‹è¨˜éŒ²ã¯ã€$rnameã•ã‚“ã®ã€Œ<A HREF=Â¥"httpÂ¥:Â¥/Â¥/$rurlÂ¥" TARGET=Â¥"_blankÂ¥"><FONT SIZE=Â¥"3Â¥" COLOR=Â¥"#6666BBÂ¥">$rsite</FONT></A>ã€ã€$rcounté€£å‹ã§ã™ã€‚æ–°è¨˜éŒ²ã‚’å‡ºã—ãŸã‚µã‚¤ãƒˆåã®æ¨ªã«ã¯ã€<IMG SRC="$mark">ãƒãƒ¼ã‚¯ãŒã¤ãã¾ã™ã€‚
 <table border=0 width='100%'>
 <tr>
 <td width="500" valign="top">
 	<table border=1 width="100%">
 	<tr>
-	<td colspan=5 align="center" class="b2"><font color="#FFFFFF">$wcount˜AŸ’†</font></td>
+	<td colspan=5 align="center" class="b2"><font color="#FFFFFF">$wcounté€£å‹ä¸­</font></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">ƒz[ƒ€ƒy[ƒW</td>
-	<td colspan="4"><a href="http\:\/\/$wurl"><b>$wsite</b></a>
+	<td align="center" class="b1">ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸</td>
+	<td colspan="4"><a href="httpÂ¥:Â¥/Â¥/$wurl"><b>$wsite</b></a>
 EOM
 	if($rurl eq "$wurl") {
-		print "<IMG SRC=\"$mark\" border=0>\n";
+		print "<IMG SRC=Â¥"$markÂ¥" border=0>Â¥n";
 	}
 	print <<"EOM";
 	</td>
 	</tr>
 	<tr>
-	<td align="center" rowspan="8"><img src="$img_path/$chara_img[$wchara]"><p>Ÿ—¦F$ritu\%<br>•ŠíF$wi_name</td>
-	<td align="center" class="b1">‚È‚Ü‚¦</td><td><b>$wname</b></td>
-	<td align="center" class="b1">«•Ê</td><td><b>$esex</b></td>
+	<td align="center" rowspan="8"><img src="$img_path/$chara_img[$wchara]"><p>å‹ç‡ï¼š$rituÂ¥%<br>æ­¦å™¨ï¼š$wi_name</td>
+	<td align="center" class="b1">ãªã¾ãˆ</td><td><b>$wname</b></td>
+	<td align="center" class="b1">æ€§åˆ¥</td><td><b>$esex</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">E‹Æ</td><td><b>$chara_syoku[$wsyoku]</b></td>
-	<td align="center" class="b1">ƒNƒ‰ƒX</td><td><b>$wclass</b></td>
+	<td align="center" class="b1">è·æ¥­</td><td><b>$chara_syoku[$wsyoku]</b></td>
+	<td align="center" class="b1">ã‚¯ãƒ©ã‚¹</td><td><b>$wclass</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">ƒŒƒxƒ‹</td><td><b>$wlv</b></td>
-	<td align="center" class="b1">ŒoŒ±’l</td><td><b>$wex/$next_ex</b></td>
+	<td align="center" class="b1">ãƒ¬ãƒ™ãƒ«</td><td><b>$wlv</b></td>
+	<td align="center" class="b1">çµŒé¨“å€¤</td><td><b>$wex/$next_ex</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">‚¨‹à</td><td><b>$wgold</b></td>
-	<td align="center" class="b1">HP</td><td><b>$whp\/$wmaxhp</b></td>
+	<td align="center" class="b1">ãŠé‡‘</td><td><b>$wgold</b></td>
+	<td align="center" class="b1">HP</td><td><b>$whpÂ¥/$wmaxhp</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">—Í</td><td><b>$wn_0</b></td>
-	<td align="center" class="b1">’m”\\</td><td><b>$wn_1</b></td>
+	<td align="center" class="b1">åŠ›</td><td><b>$wn_0</b></td>
+	<td align="center" class="b1">çŸ¥èƒ½Â¥</td><td><b>$wn_1</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">M‹ÂS</td><td><b>$wn_2</b></td>
-	<td align="center" class="b1">¶–½—Í</td><td><b>$wn_3</b></td>
+	<td align="center" class="b1">ä¿¡ä»°å¿ƒ</td><td><b>$wn_2</b></td>
+	<td align="center" class="b1">ç”Ÿå‘½åŠ›</td><td><b>$wn_3</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">Ší—p‚³</td><td><b>$wn_4</b></td>
-	<td align="center" class="b1">‘¬‚³</td><td><b>$wn_5</b></td>
+	<td align="center" class="b1">å™¨ç”¨ã•</td><td><b>$wn_4</b></td>
+	<td align="center" class="b1">é€Ÿã•</td><td><b>$wn_5</b></td>
 	</tr>
 	<tr>
-	<td align="center" class="b1">–£—Í</td><td><b>$wn_6</b></td>
-	<td align="center" class="b1">ƒJƒ‹ƒ}</td><td><b>$wlp</b></td>
+	<td align="center" class="b1">é­…åŠ›</td><td><b>$wn_6</b></td>
+	<td align="center" class="b1">ã‚«ãƒ«ãƒ</td><td><b>$wlp</b></td>
 	</tr>
 	<tr>
-	<td colspan=5 align="center">$lname ‚Ì <A HREF=\"http\:\/\/$lurl\" TARGET=\"_blank\">$lsite</A> ‚ÉŸ—˜II</td>
+	<td colspan=5 align="center">$lname ã® <A HREF=Â¥"httpÂ¥:Â¥/Â¥/$lurlÂ¥" TARGET=Â¥"_blankÂ¥">$lsite</A> ã«å‹åˆ©ï¼ï¼</td>
 	</tr>
 	</table>
 </td>
 <td valign="top" class=small>
-[<B><FONT COLOR="#FF9933">$main_title ‚Ì—V‚Ñ•û</FONT></B>]
+[<B><FONT COLOR="#FF9933">$main_title ã®éŠã³æ–¹</FONT></B>]
 <OL>
-<LI>‚Ü‚¸AuV‹KƒLƒƒƒ‰ƒNƒ^[“o˜^vƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚ÄAƒLƒƒƒ‰ƒNƒ^[‚ğì¬‚µ‚Ü‚·B
-<LI>ƒLƒƒƒ‰ƒNƒ^[‚Ìì¬‚ªŠ®—¹‚µ‚½‚çA‚±‚Ìƒy[ƒW‚Ì‰Eã‚É‚ ‚é‚Æ‚±‚ë‚©‚çƒƒOƒCƒ“‚µ‚ÄA‚ ‚È‚½ê—p‚ÌƒXƒe[ƒ^ƒX‰æ–Ê‚É“ü‚è‚Ü‚·B
-<LI>‚»‚±‚Å‚ ‚È‚½‚Ìs“®‚ğ‘I‘ğ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
-<LI>ˆê“xƒLƒƒƒ‰ƒNƒ^[‚ğì¬‚µ‚½‚çA‰Eã‚Ì‚Æ‚±‚ë‚©‚çƒƒOƒCƒ“‚µ‚Ä—V‚Ñ‚Ü‚·BV‹K‚ÉƒLƒƒƒ‰ƒNƒ^[‚ğì‚ê‚é‚Ì‚ÍAˆêl‚Éˆê‚Â‚ÌƒLƒƒƒ‰ƒNƒ^[‚Ì‚İ‚Å‚·B
-<LI>‚±‚ê‚ÍAHPƒoƒgƒ‰[‚Å‚Í‚È‚­AƒLƒƒƒ‰ƒoƒgƒ‰[‚Å‚·BƒLƒƒƒ‰ƒNƒ^[‚ğˆç‚Ä‚Ä‚¢‚­ƒQ[ƒ€‚Å‚·B
-<LI>”\\—Í‚ğU‚è•ª‚¯‚é‚±‚Æ‚ª‚Å‚«ƒLƒƒƒ‰ƒNƒ^[‚Ì”\\—Í‚ğ‚²©•ª‚ÅŒˆ‚ß‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B(‚±‚±‚ÅŒˆ‚ß‚½”\\—Í‚Í‚²‚­‚Ü‚ê‚É‚µ‚©ã¸‚µ‚È‚¢‚Ì‚ÅATd‚É)
-<LI><b>$limit“ú</b>ˆÈã“¬‚í‚È‚¯‚ê‚ÎAƒLƒƒƒ‰ƒNƒ^[‚Ìƒf[ƒ^‚ªíœ‚³‚ê‚Ü‚·B
-<LI>ˆê“xí“¬‚·‚é‚Æ<b>$b_time</b>•bŒo‰ß‚µ‚È‚¢‚ÆÄ‚Ñí“¬‚Å‚«‚Ü‚¹‚ñB
+<LI>ã¾ãšã€ã€Œæ–°è¦ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ç™»éŒ²ã€ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ã€ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’ä½œæˆã—ã¾ã™ã€‚
+<LI>ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ä½œæˆãŒå®Œäº†ã—ãŸã‚‰ã€ã“ã®ãƒšãƒ¼ã‚¸ã®å³ä¸Šã«ã‚ã‚‹ã¨ã“ã‚ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦ã€ã‚ãªãŸå°‚ç”¨ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢ã«å…¥ã‚Šã¾ã™ã€‚
+<LI>ãã“ã§ã‚ãªãŸã®è¡Œå‹•ã‚’é¸æŠã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
+<LI>ä¸€åº¦ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’ä½œæˆã—ãŸã‚‰ã€å³ä¸Šã®ã¨ã“ã‚ã‹ã‚‰ãƒ­ã‚°ã‚¤ãƒ³ã—ã¦éŠã³ã¾ã™ã€‚æ–°è¦ã«ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’ä½œã‚Œã‚‹ã®ã¯ã€ä¸€äººã«ä¸€ã¤ã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ã¿ã§ã™ã€‚
+<LI>ã“ã‚Œã¯ã€HPãƒãƒˆãƒ©ãƒ¼ã§ã¯ãªãã€ã‚­ãƒ£ãƒ©ãƒãƒˆãƒ©ãƒ¼ã§ã™ã€‚ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’è‚²ã¦ã¦ã„ãã‚²ãƒ¼ãƒ ã§ã™ã€‚
+<LI>èƒ½Â¥åŠ›ã‚’æŒ¯ã‚Šåˆ†ã‘ã‚‹ã“ã¨ãŒã§ãã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®èƒ½Â¥åŠ›ã‚’ã”è‡ªåˆ†ã§æ±ºã‚ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚(ã“ã“ã§æ±ºã‚ãŸèƒ½Â¥åŠ›ã¯ã”ãã¾ã‚Œã«ã—ã‹ä¸Šæ˜‡ã—ãªã„ã®ã§ã€æ…é‡ã«)
+<LI><b>$limitæ—¥</b>ä»¥ä¸Šé—˜ã‚ãªã‘ã‚Œã°ã€ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ãƒ‡ãƒ¼ã‚¿ãŒå‰Šé™¤ã•ã‚Œã¾ã™ã€‚
+<LI>ä¸€åº¦æˆ¦é—˜ã™ã‚‹ã¨<b>$b_time</b>ç§’çµŒéã—ãªã„ã¨å†ã³æˆ¦é—˜ã§ãã¾ã›ã‚“ã€‚
 </OL>
-[<B><FONT COLOR="#FF9933">V‹KƒLƒƒƒ‰ƒNƒ^ì¬</FONT></B>]<BR>
-‰º‚Ìƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚ÄA‚ ‚È‚½‚ÌƒLƒƒƒ‰ƒNƒ^[‚ğì¬‚µ‚Ü‚·B
+[<B><FONT COLOR="#FF9933">æ–°è¦ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ä½œæˆ</FONT></B>]<BR>
+ä¸‹ã®ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ã€ã‚ãªãŸã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’ä½œæˆã—ã¾ã™ã€‚
 <FORM ACTION="$script" METHOD="POST">
 <INPUT TYPE="hidden" NAME="mode" VALUE="chara_make">
-<INPUT TYPE="submit" VALUE="V‹KƒLƒƒƒ‰ƒNƒ^[ì¬">
+<INPUT TYPE="submit" VALUE="æ–°è¦ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ä½œæˆ">
 </FORM>
 </td>
 </tr>
@@ -842,21 +842,21 @@ EOM
 </small>
 EOM
 
-	# ƒtƒbƒ^[•\¦
+	# ãƒ•ãƒƒã‚¿ãƒ¼è¡¨ç¤º
 	&footer;
 
 	exit;
 }
 #----------------#
-#  ƒAƒCƒeƒ€”ƒ‚¤  #
+#  ã‚¢ã‚¤ãƒ†ãƒ è²·ã†  #
 #----------------#
 sub item_buy {
 	if($in{'id'} eq "") {
-		&error("ID‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB");
+		&error("IDãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
 	}elsif($in{'pass'} eq ""){
-		&error("ƒpƒXƒ[ƒh‚ª“ü—Í‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB");
+		&error("ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒå…¥åŠ›ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
 	}elsif($in{'item_no'} eq ""){
-		&error("ƒAƒCƒeƒ€‚ğ‘I‚ñ‚Å‚­‚¾‚³‚¢B");
+		&error("ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸ã‚“ã§ãã ã•ã„ã€‚");
 	}
 	$item_id = $in{'id'};
 	$item_pass = $in{'pass'};
@@ -870,13 +870,13 @@ sub item_buy {
 		($i_no,$i_name,$i_dmg,$i_gold) = split(/<>/);
 		if($in{'item_no'} eq "$i_no") { $hit=1;last; }
 	}
-	if(!$hit) { &error("‚»‚ñ‚ÈƒAƒCƒeƒ€‚Í‘¶İ‚µ‚Ü‚¹‚ñ"); }
+	if(!$hit) { &error("ãã‚“ãªã‚¢ã‚¤ãƒ†ãƒ ã¯å­˜åœ¨ã—ã¾ã›ã‚“"); }
 
 	&get_host;
 
 	$date = time();
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -888,36 +888,36 @@ sub item_buy {
 	foreach(@item_chara){
 		($iid,$ipass,$isite,$iurl,$iname,$isex,$ichara,$in_0,$in_1,$in_2,$in_3,$in_4,$in_5,$in_6,$isyoku,$iclass,$ihp,$imaxhp,$iex,$ilv,$igold,$ilp,$itotal,$ikati,$iwaza,$ii_name,$ii_dmg,$imons,$ihost,$idate) = split(/<>/);
 		if($iid eq "$item_id") {
-			if ($ipass ne $item_pass) { &error('ƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·B'); }
-			if($igold < $i_gold) { &error("‚¨‹à‚ª‘«‚è‚Ü‚¹‚ñ"); }
+			if ($ipass ne $item_pass) { &error('ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™ã€‚'); }
+			if($igold < $i_gold) { &error("ãŠé‡‘ãŒè¶³ã‚Šã¾ã›ã‚“"); }
 			else { $igold = $igold - $i_gold; }
-			unshift(@item_new,"$iid<>$ipass<>$isite<>$iurl<>$iname<>$isex<>$ichara<>$in_0<>$in_1<>$in_2<>$in_3<>$in_4<>$in_5<>$in_6<>$isyoku<>$iclass<>$imaxhp<>$imaxhp<>$iex<>$ilv<>$igold<>$ilp<>$itotal<>$ikati<>$iwaza<>$i_name<>$i_dmg<>$imons<>$host<>$idate<>\n");
+			unshift(@item_new,"$iid<>$ipass<>$isite<>$iurl<>$iname<>$isex<>$ichara<>$in_0<>$in_1<>$in_2<>$in_3<>$in_4<>$in_5<>$in_6<>$isyoku<>$iclass<>$imaxhp<>$imaxhp<>$iex<>$ilv<>$igold<>$ilp<>$itotal<>$ikati<>$iwaza<>$i_name<>$i_dmg<>$imons<>$host<>$idate<>Â¥n");
 			$hit=1;
 		}else{
 			push(@item_new,"$_");
 		}
 	}
 
-	if(!$hit) { &error("ƒLƒƒƒ‰ƒNƒ^[‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ"); }
+	if(!$hit) { &error("ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“"); }
 
 	open(OUT,">$chara_file");
 	print OUT @item_new;
 	close(OUT);
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&header;
 
 	print <<"EOM";
-<h1>ƒAƒCƒeƒ€‚ğ”ƒ‚¢‚Ü‚µ‚½</h1>
+<h1>ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã„ã¾ã—ãŸ</h1>
 <hr size=0>
 <p>
 <form action="$script" method="get">
 <input type=hidden name=id value="$item_id">
 <input type=hidden name=pass value="$item_pass">
 <input type=hidden name=mode value=log_in>
-<input type=submit value="ƒXƒe[ƒ^ƒX‰æ–Ê‚Ö">
+<input type=submit value="ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢ã¸">
 </form>
 EOM
 
@@ -926,7 +926,7 @@ EOM
 	exit;
 }
 #----------------#
-#  ƒAƒCƒeƒ€•\¦  #
+#  ã‚¢ã‚¤ãƒ†ãƒ è¡¨ç¤º  #
 #----------------#
 sub item_shop {
 	open(IN,"<$item_file");
@@ -936,32 +936,32 @@ sub item_shop {
 	&header;
 
 	print <<"EOM";
-<h1>ƒAƒCƒeƒ€ƒVƒ‡ƒbƒv</h1>
+<h1>ã‚¢ã‚¤ãƒ†ãƒ ã‚·ãƒ§ãƒƒãƒ—</h1>
 <hr size=0>
 <p>
 <form action="$script" method="post">
-”ƒ‚¢‚½‚¢ƒAƒCƒeƒ€‚ğƒ`ƒFƒbƒN‚µA‚ ‚È‚½‚ÌID‚ÆƒpƒXƒ[ƒh‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B
+è²·ã„ãŸã„ã‚¢ã‚¤ãƒ†ãƒ ã‚’ãƒã‚§ãƒƒã‚¯ã—ã€ã‚ãªãŸã®IDã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚
 <table border=1>
 <tr>
-<th></th><th>No.</th><th>‚È‚Ü‚¦</th><th>ˆĞ—Í</th><th>‰¿Ši</th>
+<th></th><th>No.</th><th>ãªã¾ãˆ</th><th>å¨åŠ›</th><th>ä¾¡æ ¼</th>
 EOM
 
 	foreach(@item_array){
 		($ino,$iname,$idmg,$igold) = split(/<>/);
-		print "<tr>\n";
-		print "<td><input type=radio name=item_no value=\"$ino\"></td><td align=right>$ino</td><td>$iname</td><td align=center>$idmg</td><td align=center>$igold</td>\n";
-		print "</tr>\n";
+		print "<tr>Â¥n";
+		print "<td><input type=radio name=item_no value=Â¥"$inoÂ¥"></td><td align=right>$ino</td><td>$iname</td><td align=center>$idmg</td><td align=center>$igold</td>Â¥n";
+		print "</tr>Â¥n";
 	}
 
 	print <<"EOM";
 </tr>
 </table>
 <p>
-‚ ‚È‚½‚ÌƒLƒƒƒ‰ƒNƒ^[‚ÌID‚ÆƒpƒXƒ[ƒh‚ğ“ü—Í‚µ‚Äƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B<br>
-IDF<input type=text name=id size=10>
-PASSF<input type=text name=pass size=10>
+ã‚ãªãŸã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®IDã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãƒœã‚¿ãƒ³ã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚<br>
+IDï¼š<input type=text name=id size=10>
+PASSï¼š<input type=text name=pass size=10>
 <input type=hidden name=mode value=item_buy>
-<input type=submit value="ƒAƒCƒeƒ€‚ğ”ƒ‚¤">
+<input type=submit value="ã‚¢ã‚¤ãƒ†ãƒ ã‚’è²·ã†">
 </form>
 EOM
 
@@ -970,7 +970,7 @@ EOM
 	exit;
 }
 #-------------------------------#
-#  ƒƒbƒNƒtƒ@ƒCƒ‹FsymlinkŠÖ”  #
+#  ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ï¼šsymlinké–¢æ•°  #
 #-------------------------------#
 sub lock1 {
 	local($retry) = 5;
@@ -980,7 +980,7 @@ sub lock1 {
 	}
 }
 #----------------------------#
-#  ƒƒbƒNƒtƒ@ƒCƒ‹FopenŠÖ”  #
+#  ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ï¼šopené–¢æ•°  #
 #----------------------------#
 sub lock2 {
 	local($retry) = 0;
@@ -993,15 +993,15 @@ sub lock2 {
 			last;
 		}
 	}
-	if (!$retry) { &error("‚µ‚Î‚ç‚­‚¨‘Ò‚¿‚É‚È‚Á‚Ä‚­‚¾‚³‚¢(^^;)"); }
+	if (!$retry) { &error("ã—ã°ã‚‰ããŠå¾…ã¡ã«ãªã£ã¦ãã ã•ã„(^^;)"); }
 }
 #----------------#
-#  ƒƒOƒCƒ“‰æ–Ê  #
+#  ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢  #
 #----------------#
 sub log_in {
 	$chara_flag=1;
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -1021,23 +1021,23 @@ sub log_in {
 	$ltime = $ltime - $kdate;
 	$vtime = $b_time - $ltime;
 	$mtime = $m_time - $ltime;
-	if($in{'id'} ne "$kid") {&error("ƒI[ƒvƒ“ƒGƒ‰[AIDEƒpƒXƒ[ƒh‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB");}
+	if($in{'id'} ne "$kid") {&error("ã‚ªãƒ¼ãƒ—ãƒ³ã‚¨ãƒ©ãƒ¼ã€IDãƒ»ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚");}
 	
-	if(!$hit) { &error("“ü—Í‚³‚ê‚½ID‚Í“o˜^‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB–”‚ÍƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·B"); }
+	if(!$hit) { &error("å…¥åŠ›ã•ã‚ŒãŸIDã¯ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚åˆã¯ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™ã€‚"); }
 
-	if($ksex) { $esex = "’j"; } else { $esex = "—"; }
+	if($ksex) { $esex = "ç”·"; } else { $esex = "å¥³"; }
 	$next_ex = $klv * $lv_up;
 
 	&header;
 
 	print <<"EOM";
-<h1>$kname‚³‚ñ—pƒXƒe[ƒ^ƒX‰æ–Ê</h1>
+<h1>$knameã•ã‚“ç”¨ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢</h1>
 <hr size=0>
 EOM
 	if($ltime < $b_time and $ktotal){
 	print <<"EOM";
 <FORM NAME="form1">
-ƒ`ƒƒƒ“ƒv‚Æ“¬‚¦‚é‚Ü‚Åc‚è<INPUT TYPE="text" NAME="clock" SIZE="3" VALUE="$vtime">•b‚Å‚·B0‚É‚È‚é‚ÆA©“®“I‚ÉXV‚µ‚Ü‚·‚Ì‚Åƒuƒ‰ƒEƒU‚ÌXV‚Í‰Ÿ‚³‚È‚¢‚Å‰º‚³‚¢B
+ãƒãƒ£ãƒ³ãƒ—ã¨é—˜ãˆã‚‹ã¾ã§æ®‹ã‚Š<INPUT TYPE="text" NAME="clock" SIZE="3" VALUE="$vtime">ç§’ã§ã™ã€‚0ã«ãªã‚‹ã¨ã€è‡ªå‹•çš„ã«æ›´æ–°ã—ã¾ã™ã®ã§ãƒ–ãƒ©ã‚¦ã‚¶ã®æ›´æ–°ã¯æŠ¼ã•ãªã„ã§ä¸‹ã•ã„ã€‚
 </FORM>
 EOM
 	}
@@ -1048,71 +1048,71 @@ EOM
 <td valign=top width='50%'>
 <table border=1>
 <tr>
-<td colspan="5" class="b2" align="center">ƒz[ƒ€ƒy[ƒWƒf[ƒ^</td>
+<td colspan="5" class="b2" align="center">ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ãƒ‡ãƒ¼ã‚¿</td>
 </tr>
 <tr>
-<td class="b1">ƒz[ƒ€ƒy[ƒW–¼</td>
+<td class="b1">ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸å</td>
 <td colspan="4"><input type="text" name=site value="$ksite" size=50></td>
 </tr>
 <tr>
-<td class="b1">ƒz[ƒ€ƒy[ƒW‚ÌURL</td>
-<td colspan="4"><input type="text" name=url value="http\:\/\/$kurl" size=60></td>
+<td class="b1">ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®URL</td>
+<td colspan="4"><input type="text" name=url value="httpÂ¥:Â¥/Â¥/$kurl" size=60></td>
 </tr>
 <tr>
-<td colspan="5" class="b2" align="center">ƒLƒƒƒ‰ƒNƒ^[ƒf[ƒ^</td>
+<td colspan="5" class="b2" align="center">ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ãƒ‡ãƒ¼ã‚¿</td>
 </tr>
 <tr>
-<td rowspan="8" align="center"><img src="$img_path/$chara_img[$kchara]"><br>•ŠíF$ki_name</td>
-<td class="b1">‚È‚Ü‚¦</td>
+<td rowspan="8" align="center"><img src="$img_path/$chara_img[$kchara]"><br>æ­¦å™¨ï¼š$ki_name</td>
+<td class="b1">ãªã¾ãˆ</td>
 <td><input type="text" name=c_name value="$kname" size=10></td>
-<td class="b1">«•Ê</td>
+<td class="b1">æ€§åˆ¥</td>
 <td>$esex</td>
 </tr>
 <tr>
-<td class="b1">E‹Æ</td>
+<td class="b1">è·æ¥­</td>
 <td>$chara_syoku[$ksyoku]</td>
-<td class="b1">ƒNƒ‰ƒX</td>
+<td class="b1">ã‚¯ãƒ©ã‚¹</td>
 <td>$kclass</td>
 </tr>
 <tr>
-<td class="b1">ƒŒƒxƒ‹</td>
+<td class="b1">ãƒ¬ãƒ™ãƒ«</td>
 <td>$klv</td>
-<td class="b1">ŒoŒ±’l</td>
+<td class="b1">çµŒé¨“å€¤</td>
 <td>$kex/$next_ex</td>
 </tr>
 <tr>
-<td class="b1">‚¨‹à</td>
+<td class="b1">ãŠé‡‘</td>
 <td>$kgold</td>
 <td class="b1">HP</td>
-<td>$khp\/$kmaxhp</td>
+<td>$khpÂ¥/$kmaxhp</td>
 </tr>
 <tr>
-<td class="b1">—Í</td>
+<td class="b1">åŠ›</td>
 <td>$kn_0</td>
-<td class="b1">’m”\\</td>
+<td class="b1">çŸ¥èƒ½Â¥</td>
 <td>$kn_1</td>
 </tr>
 <tr>
-<td class="b1">M‹ÂS</td>
+<td class="b1">ä¿¡ä»°å¿ƒ</td>
 <td>$kn_2</td>
-<td class="b1">¶–½—Í</td>
+<td class="b1">ç”Ÿå‘½åŠ›</td>
 <td>$kn_3</td>
 </tr>
 <tr>
-<td class="b1">Ší—p‚³</td>
+<td class="b1">å™¨ç”¨ã•</td>
 <td>$kn_4</td>
-<td class="b1">‘¬‚³</td>
+<td class="b1">é€Ÿã•</td>
 <td>$kn_5</td>
 </tr>
 <tr>
-<td class="b1">–£—Í</td>
+<td class="b1">é­…åŠ›</td>
 <td>$kn_6</td>
-<td class="b1">ƒJƒ‹ƒ}</td>
+<td class="b1">ã‚«ãƒ«ãƒ</td>
 <td>$klp</td>
 </tr>
 <tr>
-<td class="b1">‹Z”­“®ƒRƒƒ“ƒg<br>
-<small>i”¼Šp$waza_maxs•¶šˆÈ“àj</small></td>
+<td class="b1">æŠ€ç™ºå‹•æ™‚ã‚³ãƒ¡ãƒ³ãƒˆ<br>
+<small>ï¼ˆåŠè§’$waza_maxsæ–‡å­—ä»¥å†…ï¼‰</small></td>
 <td colspan="4"><input type="text" name=waza value="$kwaza" size=50></td>
 </tr>
 <tr>
@@ -1122,9 +1122,9 @@ EOM
 <input type="hidden" name=pass value="$kpass">
 EOM
 	if($ltime >= $b_time or !$ktotal) {
-		print "<input type=\"submit\" value=\"ƒ`ƒƒƒ“ƒv‚É’§í\">\n";
+		print "<input type=Â¥"submitÂ¥" value=Â¥"ãƒãƒ£ãƒ³ãƒ—ã«æŒ‘æˆ¦Â¥">Â¥n";
 	}else{
-		print "$vtime•bŒã“¬‚¦‚é‚æ‚¤‚É‚È‚è‚Ü‚·B\n";
+		print "$vtimeç§’å¾Œé—˜ãˆã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚Â¥n";
 	}
 
 	print <<"EOM";
@@ -1135,9 +1135,9 @@ EOM
 </td>
 <td valign="top">
 <form action="$script" method="post">
-yŒ»İ“]E‚Å‚«‚éE‹Æˆê——z<br>
+ã€ç¾åœ¨è»¢è·ã§ãã‚‹è·æ¥­ä¸€è¦§ã€‘<br>
 <select name=syoku>
-<option value="no">‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B
+<option value="no">é¸æŠã—ã¦ãã ã•ã„ã€‚
 EOM
 
 	open(IN,"<$syoku_file");
@@ -1148,7 +1148,7 @@ EOM
 	foreach(@syoku){
 		($a,$b,$c,$d,$e,$f,$g) = split(/<>/);
 		if($kn_0 >= $a and $kn_1 >= $b and $kn_2 >= $c and $kn_3 >= $d and $kn_4 >= $e and $kn_5 >= $f and $kn_6 >= $g and $ksyoku != $i) {
-			print "<option value=\"$i\">$chara_syoku[$i]\n";
+			print "<option value=Â¥"$iÂ¥">$chara_syoku[$i]Â¥n";
 			$hit=1;
 		}
 		$i++;
@@ -1160,44 +1160,44 @@ EOM
 <input type=hidden name=mode value="tensyoku">
 EOM
 
-	if(!$hit) { print "Œ»İ“]E‚Å‚«‚éE‹Æ‚Í‚ ‚è‚Ü‚¹‚ñ"; }
-	else { print "<input type=submit value=\"“]E‚·‚é\">\n"; }
+	if(!$hit) { print "ç¾åœ¨è»¢è·ã§ãã‚‹è·æ¥­ã¯ã‚ã‚Šã¾ã›ã‚“"; }
+	else { print "<input type=submit value=Â¥"è»¢è·ã™ã‚‹Â¥">Â¥n"; }
 
 	print <<"EOM";
 <br>
-@<small>¦ “]E‚·‚é‚ÆA‘S‚Ä‚Ì”\\—Í’l‚ª“]E‚µ‚½E‹Æ‚Ì‰Šú’l‚É‚È‚è‚Ü‚·B‚Ü‚½ALV‚à1‚É‚È‚è‚Ü‚·B</small>
+ã€€<small>â€» è»¢è·ã™ã‚‹ã¨ã€å…¨ã¦ã®èƒ½Â¥åŠ›å€¤ãŒè»¢è·ã—ãŸè·æ¥­ã®åˆæœŸå€¤ã«ãªã‚Šã¾ã™ã€‚ã¾ãŸã€LVã‚‚1ã«ãªã‚Šã¾ã™ã€‚</small>
 </form>
 <form action="$script" method="post">
-y–‚•¨‚Æí‚¢Cs‚Å‚«‚Ü‚·z<br>
+ã€é­”ç‰©ã¨æˆ¦ã„ä¿®è¡Œã§ãã¾ã™ã€‘<br>
 <input type=hidden name=id value="$kid">
 <input type=hidden name=pass value="$kpass">
 <input type=hidden name=mode value="monster">
 EOM
 
 	if($ltime >= $m_time or !$ktotal) {
-		print "<input type=submit value=\"ƒ‚ƒ“ƒXƒ^[‚Æ“¬‚¤\"><br>\n";
+		print "<input type=submit value=Â¥"ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã¨é—˜ã†Â¥"><br>Â¥n";
 	}else{
-		print "$mtime•bŒã“¬‚¦‚é‚æ‚¤‚É‚È‚è‚Ü‚·B<br>\n";
+		print "$mtimeç§’å¾Œé—˜ãˆã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚<br>Â¥n";
 	}
 
 	$yado_gold = $yado_dai * $klv;
 
 	print <<"EOM";
-@<small>¦Cs‚Ì—·‚É‚¢‚¯‚Ü‚·B</small>
+ã€€<small>â€»ä¿®è¡Œã®æ—…ã«ã„ã‘ã¾ã™ã€‚</small>
 </form>
 <form action="$script" method="post">
-y—·‚Ìhz<br>
+ã€æ—…ã®å®¿ã€‘<br>
 <input type=hidden name=id value="$kid">
 <input type=hidden name=pass value="$kpass">
 <input type=hidden name=mode value="yado">
-<input type=submit value="‘Ì—Í‚ğ‰ñ•œ"><br>
-@<small>¦‘Ì—Í‚ğ‰ñ•œ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B<b>$yado_gold</b>G•K—v‚Å‚·BŒ»İƒ`ƒƒƒ“ƒv‚Ì•û‚à‰ñ•œ‚Å‚«‚Ü‚·B‚±‚Ü‚ß‚É‰ñ•œ‚·‚ê‚Î˜AŸ‹L˜^‚àEEEB</small>
+<input type=submit value="ä½“åŠ›ã‚’å›å¾©"><br>
+ã€€<small>â€»ä½“åŠ›ã‚’å›å¾©ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚<b>$yado_gold</b>Gå¿…è¦ã§ã™ã€‚ç¾åœ¨ãƒãƒ£ãƒ³ãƒ—ã®æ–¹ã‚‚å›å¾©ã§ãã¾ã™ã€‚ã“ã¾ã‚ã«å›å¾©ã™ã‚Œã°é€£å‹è¨˜éŒ²ã‚‚ãƒ»ãƒ»ãƒ»ã€‚</small>
 </form>
 <form action="$script" method="post">
-y‘¼‚ÌƒLƒƒƒ‰ƒNƒ^[‚ÖƒƒbƒZ[ƒW‚ğ‘—‚éz<br>
+ã€ä»–ã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã¸ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ã‚‹ã€‘<br>
 <input type="text" name=mes size=50><br>
 <select name=mesid>
-<option value="">‘—‚é‘Šè‚ğ‘I‘ğ
+<option value="">é€ã‚‹ç›¸æ‰‹ã‚’é¸æŠ
 EOM
 
 	open(IN,"<$chara_file");
@@ -1207,7 +1207,7 @@ EOM
 	foreach(@MESSAGE) {
 		($did,$dpass,$dsite,$durl,$dname) = split(/<>/);
 		if($kid eq $did) { next; }
-		print "<option value=$did>$dname‚³‚ñ‚Ö\n";
+		print "<option value=$did>$dnameã•ã‚“ã¸Â¥n";
 	}
 
 	print <<"EOM";
@@ -1216,13 +1216,13 @@ EOM
 <input type=hidden name=name value="$kname">
 <input type=hidden name=pass value="$kpass">
 <input type=hidden name=mode value="message">
-<input type=submit value="ƒƒbƒZ[ƒW‚ğ‘—‚é"><br>
-@<small>¦‘¼‚ÌƒLƒƒƒ‰ƒNƒ^[‚ÖƒƒbƒZ[ƒW‚ğ‘—‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·Bi”¼Šp$mes_maxs•¶šˆÈ“àj</small>
+<input type=submit value="ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ã‚‹"><br>
+ã€€<small>â€»ä»–ã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã¸ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚ï¼ˆåŠè§’$mes_maxsæ–‡å­—ä»¥å†…ï¼‰</small>
 </form>
 </td>
 </tr>
 </table>
-y“Í‚¢‚Ä‚¢‚éƒƒbƒZ[ƒWz•\\¦”<b>$max_gyo</b>Œ‚Ü‚Å<br>
+ã€å±Šã„ã¦ã„ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‘è¡¨Â¥ç¤ºæ•°<b>$max_gyo</b>ä»¶ã¾ã§<br>
 EOM
 
 	open(IN,"<$message_file");
@@ -1234,18 +1234,18 @@ EOM
 		($pid,$hid,$hname,$hmessage,$hhname,$htime) = split(/<>/);
 		if($kid eq "$pid"){
 			if($max_gyo < $i) { last; }
-			print "<hr size=0><small><b>$hname‚³‚ñ</b>@„ u<b>$hmessage</b>v($htime)</small><br>\n";
+			print "<hr size=0><small><b>$hnameã•ã‚“</b>ã€€ï¼ ã€Œ<b>$hmessage</b>ã€($htime)</small><br>Â¥n";
 			$hit=1;$i++;
 		}elsif($kid eq "$hid"){
-			print "<hr size=0><small>$kname‚³‚ñ‚©‚ç$hhname‚³‚ñ‚Ö@„ u$hmessagev($htime)</small><br>\n";
+			print "<hr size=0><small>$knameã•ã‚“ã‹ã‚‰$hhnameã•ã‚“ã¸ã€€ï¼ ã€Œ$hmessageã€($htime)</small><br>Â¥n";
 		}
 	}
-	if(!$hit){ print "<hr size=0>$kname‚³‚ñˆ¶‚Ä‚ÌƒƒbƒZ[ƒW‚Í‚ ‚è‚Ü‚¹‚ñ<p>\n"; }
+	if(!$hit){ print "<hr size=0>$knameã•ã‚“å®›ã¦ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯ã‚ã‚Šã¾ã›ã‚“<p>Â¥n"; }
 	print "<hr size=0><p>";
 
 	&footer;
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	$chara_flag=0;
@@ -1253,34 +1253,34 @@ EOM
 	exit;
 }
 #----------------#
-#  “o˜^Š®—¹‰æ–Ê  #
+#  ç™»éŒ²å®Œäº†ç”»é¢  #
 #----------------#
 sub make_end {
-	if($chara_stop){ &error("Œ»İƒLƒƒƒ‰ƒNƒ^[‚Ìì¬“o˜^‚Í‚Å‚«‚Ü‚¹‚ñ"); }
-	if ($in{'id'} =~ m/[^0-9a-zA-Z]/)
-	{&error("ID‚É”¼Šp‰p”šˆÈŠO‚Ì•¶š‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚·B"); }
-	if ($in{'pass'} =~ m/[^0-9a-zA-Z]/)
-	{&error("ƒpƒXƒ[ƒh‚É”¼Šp‰p”šˆÈŠO‚Ì•¶š‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚·B"); }
-	# E‹Æ–¢‘I‘ğ‚Ìê‡
+	if($chara_stop){ &error("ç¾åœ¨ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®ä½œæˆç™»éŒ²ã¯ã§ãã¾ã›ã‚“"); }
+	if ($in{'id'} =â€¾ m/[^0-9a-zA-Z]/)
+	{&error("IDã«åŠè§’è‹±æ•°å­—ä»¥å¤–ã®æ–‡å­—ãŒå«ã¾ã‚Œã¦ã„ã¾ã™ã€‚"); }
+	if ($in{'pass'} =â€¾ m/[^0-9a-zA-Z]/)
+	{&error("ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã«åŠè§’è‹±æ•°å­—ä»¥å¤–ã®æ–‡å­—ãŒå«ã¾ã‚Œã¦ã„ã¾ã™ã€‚"); }
+	# è·æ¥­æœªé¸æŠã®å ´åˆ
 		if($in{'syoku'} eq "") {
-		if($in{'id'} eq "" or length($in{'id'}) < 4 or length($in{'id'}) > 8) { &error("ID‚ÍA4•¶šˆÈãA8•¶šˆÈ‰º‚Å“ü—Í‚µ‚Ä‰º‚³‚¢B"); }
-		elsif($in{'pass'} eq "" or length($in{'pass'}) < 4 or length($in{'pass'}) > 8) { &error("ƒpƒXƒ[ƒh‚ÍA4•¶šˆÈãA8•¶šˆÈ‰º‚Å“ü—Í‚µ‚Ä‰º‚³‚¢B"); }
-		elsif($in{'site'} eq "") { &error("ƒz[ƒ€ƒy[ƒW–¼‚ª–¢‹L“ü‚Å‚·"); }
-		elsif($in{'url'} eq "") { &error("URL‚ª–¢‹L“ü‚Å‚·"); }
-		elsif($in{'c_name'} eq "") { &error("ƒLƒƒƒ‰ƒNƒ^[‚Ì–¼‘O‚ª–¢‹L“ü‚Å‚·"); }
-		elsif($in{'sex'} eq "") { &error("«•Ê‚ª‘I‘ğ‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"); }
+		if($in{'id'} eq "" or length($in{'id'}) < 4 or length($in{'id'}) > 8) { &error("IDã¯ã€4æ–‡å­—ä»¥ä¸Šã€8æ–‡å­—ä»¥ä¸‹ã§å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚"); }
+		elsif($in{'pass'} eq "" or length($in{'pass'}) < 4 or length($in{'pass'}) > 8) { &error("ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯ã€4æ–‡å­—ä»¥ä¸Šã€8æ–‡å­—ä»¥ä¸‹ã§å…¥åŠ›ã—ã¦ä¸‹ã•ã„ã€‚"); }
+		elsif($in{'site'} eq "") { &error("ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸åãŒæœªè¨˜å…¥ã§ã™"); }
+		elsif($in{'url'} eq "") { &error("URLãŒæœªè¨˜å…¥ã§ã™"); }
+		elsif($in{'c_name'} eq "") { &error("ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®åå‰ãŒæœªè¨˜å…¥ã§ã™"); }
+		elsif($in{'sex'} eq "") { &error("æ€§åˆ¥ãŒé¸æŠã•ã‚Œã¦ã„ã¾ã›ã‚“"); }
 
 		$g = $in{'n_0'} + $in{'n_1'} + $in{'n_2'} + $in{'n_3'} + $in{'n_4'} + $in{'n_5'} + $in{'n_6'};
 
-		if($g > 10) { &error("ƒ|ƒCƒ“ƒg‚ÌU‚è•ª‚¯‚ª‘½‚·‚¬‚Ü‚·BU‚è•ª‚¯‚Ì‡Œv‚ğA10ˆÈ‰º‚É‚µ‚Ä‚­‚¾‚³‚¢B"); }
+		if($g > 10) { &error("ãƒã‚¤ãƒ³ãƒˆã®æŒ¯ã‚Šåˆ†ã‘ãŒå¤šã™ãã¾ã™ã€‚æŒ¯ã‚Šåˆ†ã‘ã®åˆè¨ˆã‚’ã€10ä»¥ä¸‹ã«ã—ã¦ãã ã•ã„ã€‚"); }
 
 		&header;
 
-		print "<h1>E‹Æ‘I‘ğ‰æ–Ê</h1><hr size=0>\n";
-		print "‚ ‚È‚½‚ª‚È‚é‚±‚Æ‚ª‚Å‚«‚éE‹Æ‚ÍˆÈ‰º‚Ì‚Æ‚¨‚è‚Å‚·B<p>\n";
-		print "<form action=\"$script\" method=\"post\">\n";
-		print "<input type=hidden name=mode value=regist>\n";
-		print "<select name=syoku>\n";
+		print "<h1>è·æ¥­é¸æŠç”»é¢</h1><hr size=0>Â¥n";
+		print "ã‚ãªãŸãŒãªã‚‹ã“ã¨ãŒã§ãã‚‹è·æ¥­ã¯ä»¥ä¸‹ã®ã¨ãŠã‚Šã§ã™ã€‚<p>Â¥n";
+		print "<form action=Â¥"$scriptÂ¥" method=Â¥"postÂ¥">Â¥n";
+		print "<input type=hidden name=mode value=regist>Â¥n";
+		print "<select name=syoku>Â¥n";
 
 		open(IN,"<$syoku_file");
 		@syokudata = <IN>;
@@ -1292,67 +1292,67 @@ sub make_end {
 		foreach(@syokudata){
 			@buffer = split(/<>/);
 			if($kn[0] >= $buffer[0] && $kn[1] >= $buffer[1] && $kn[2] >= $buffer[2] && $kn[3] >= $buffer[3] && $kn[4] >= $buffer[4] && $kn[5] >= $buffer[5] && $kn[6] >= $buffer[6]){
-				print "<option value=\"$i\">$chara_syoku[$i]\n";
+				print "<option value=Â¥"$iÂ¥">$chara_syoku[$i]Â¥n";
 				$hit=1;
 				}
 			$i++;
 		}
-		if(!$hit){print "<option value=\"0\">$chara_syoku[0]\n";}
+		if(!$hit){print "<option value=Â¥"0Â¥">$chara_syoku[0]Â¥n";}
 
-		print "</select>\n";
-		print "<input type=hidden name=new value=new>\n";
-		print "<input type=hidden name=id value=\"$in{'id'}\">\n";
-		print "<input type=hidden name=pass value=\"$in{'pass'}\">\n";
-		print "<input type=hidden name=site value=\"$in{'site'}\">\n";
-		print "<input type=hidden name=url value=\"$in{'url'}\">\n";
-		print "<input type=hidden name=c_name value=\"$in{'c_name'}\">\n";
-		print "<input type=hidden name=sex value=\"$in{'sex'}\">\n";
-		print "<input type=hidden name=chara value=\"$in{'chara'}\">\n";
-		print "<input type=hidden name=n_0 value=\"$in{'n_0'}\">\n";
-		print "<input type=hidden name=n_1 value=\"$in{'n_1'}\">\n";
-		print "<input type=hidden name=n_2 value=\"$in{'n_2'}\">\n";
-		print "<input type=hidden name=n_3 value=\"$in{'n_3'}\">\n";
-		print "<input type=hidden name=n_4 value=\"$in{'n_4'}\">\n";
-		print "<input type=hidden name=n_5 value=\"$in{'n_5'}\">\n";
-		print "<input type=hidden name=n_6 value=\"$in{'n_6'}\">\n";
-		print "<input type=submit value=\"‚±‚ÌE‹Æ‚ÅOK\"></form>\n";
+		print "</select>Â¥n";
+		print "<input type=hidden name=new value=new>Â¥n";
+		print "<input type=hidden name=id value=Â¥"$in{'id'}Â¥">Â¥n";
+		print "<input type=hidden name=pass value=Â¥"$in{'pass'}Â¥">Â¥n";
+		print "<input type=hidden name=site value=Â¥"$in{'site'}Â¥">Â¥n";
+		print "<input type=hidden name=url value=Â¥"$in{'url'}Â¥">Â¥n";
+		print "<input type=hidden name=c_name value=Â¥"$in{'c_name'}Â¥">Â¥n";
+		print "<input type=hidden name=sex value=Â¥"$in{'sex'}Â¥">Â¥n";
+		print "<input type=hidden name=chara value=Â¥"$in{'chara'}Â¥">Â¥n";
+		print "<input type=hidden name=n_0 value=Â¥"$in{'n_0'}Â¥">Â¥n";
+		print "<input type=hidden name=n_1 value=Â¥"$in{'n_1'}Â¥">Â¥n";
+		print "<input type=hidden name=n_2 value=Â¥"$in{'n_2'}Â¥">Â¥n";
+		print "<input type=hidden name=n_3 value=Â¥"$in{'n_3'}Â¥">Â¥n";
+		print "<input type=hidden name=n_4 value=Â¥"$in{'n_4'}Â¥">Â¥n";
+		print "<input type=hidden name=n_5 value=Â¥"$in{'n_5'}Â¥">Â¥n";
+		print "<input type=hidden name=n_6 value=Â¥"$in{'n_6'}Â¥">Â¥n";
+		print "<input type=submit value=Â¥"ã“ã®è·æ¥­ã§OKÂ¥"></form>Â¥n";
 
 		&footer;
 
 		exit;
 	}else{
-		if($in{'sex'}) { $esex = "’j"; } else { $esex = "—"; }
+		if($in{'sex'}) { $esex = "ç”·"; } else { $esex = "å¥³"; }
 		$next_ex = $lv * $lv_up;
 
 		&header;
 
 		print <<"EOM";
-<h1>“o˜^Š®—¹‰æ–Ê</h1>
-ˆÈ‰º‚Ì“à—e‚Å“o˜^‚ªŠ®—¹‚µ‚Ü‚µ‚½B
+<h1>ç™»éŒ²å®Œäº†ç”»é¢</h1>
+ä»¥ä¸‹ã®å†…å®¹ã§ç™»éŒ²ãŒå®Œäº†ã—ã¾ã—ãŸã€‚
 <hr size=0>
 <p>
 <table border=1>
 <tr>
-<td class="b1">ƒz[ƒ€ƒy[ƒW</td>
-<td colspan="4"><a href="http\:\/\/$in{'url'}">$in{'site'}</a></td>
+<td class="b1">ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸</td>
+<td colspan="4"><a href="httpÂ¥:Â¥/Â¥/$in{'url'}">$in{'site'}</a></td>
 </tr>
 <tr>
 <td rowspan="8" align="center"><img src="$img_path/$chara_img[$in{'chara'}]"></td>
-<td class="b1">‚È‚Ü‚¦</td>
+<td class="b1">ãªã¾ãˆ</td>
 <td>$in{'c_name'}</td>
-<td class="b1">«•Ê</td>
+<td class="b1">æ€§åˆ¥</td>
 <td>$esex</td>
 </tr>
 <tr>
-<td class="b1">E‹Æ</td>
+<td class="b1">è·æ¥­</td>
 <td>$chara_syoku[$in{'syoku'}]</td>
-<td class="b1">‚¨‹à</td>
+<td class="b1">ãŠé‡‘</td>
 <td>$gold</td>
 </tr>
 <tr>
-<td class="b1">ƒŒƒxƒ‹</td>
+<td class="b1">ãƒ¬ãƒ™ãƒ«</td>
 <td>$lv</td>
-<td class="b1">ŒoŒ±’l</td>
+<td class="b1">çµŒé¨“å€¤</td>
 <td>$ex/$next_ex</td>
 </tr>
 <tr>
@@ -1362,27 +1362,27 @@ sub make_end {
 <td></td>
 </tr>
 <tr>
-<td class="b1">—Í</td>
+<td class="b1">åŠ›</td>
 <td>$n_0</td>
-<td class="b1">’m”\\</td>
+<td class="b1">çŸ¥èƒ½Â¥</td>
 <td>$n_1</td>
 </tr>
 <tr>
-<td class="b1">M‹ÂS</td>
+<td class="b1">ä¿¡ä»°å¿ƒ</td>
 <td>$n_2</td>
-<td class="b1">¶–½—Í</td>
+<td class="b1">ç”Ÿå‘½åŠ›</td>
 <td>$n_3</td>
 </tr>
 <tr>
-<td class="b1">Ší—p‚³</td>
+<td class="b1">å™¨ç”¨ã•</td>
 <td>$n_4</td>
-<td class="b1">‘¬‚³</td>
+<td class="b1">é€Ÿã•</td>
 <td>$n_5</td>
 </tr>
 <tr>
-<td class="b1">–£—Í</td>
+<td class="b1">é­…åŠ›</td>
 <td>$n_6</td>
-<td class="b1">ƒJƒ‹ƒ}</td>
+<td class="b1">ã‚«ãƒ«ãƒ</td>
 <td>$lp</td>
 </tr>
 </table>
@@ -1390,7 +1390,7 @@ sub make_end {
 <input type="hidden" name=mode value=log_in>
 <input type="hidden" name=id value="$in{'id'}">
 <input type="hidden" name=pass value="$in{'pass'}">
-<input type="submit" value="ƒXƒe[ƒ^ƒX‰æ–Ê‚Ö">
+<input type="submit" value="ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢ã¸">
 </form>
 EOM
 
@@ -1400,15 +1400,15 @@ EOM
 	}
 }
 #--------------#
-#  ƒƒbƒZ[ƒW  #
+#  ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸  #
 #--------------#
 sub message {
-	if($in{'mes'} eq "") { &error("ƒƒbƒZ[ƒW‚ª‹L“ü‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"); }
-	if($in{'mesid'} eq "") { &error("‘Šè‚ªw’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ"); }
+	if($in{'mes'} eq "") { &error("ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒè¨˜å…¥ã•ã‚Œã¦ã„ã¾ã›ã‚“"); }
+	if($in{'mesid'} eq "") { &error("ç›¸æ‰‹ãŒæŒ‡å®šã•ã‚Œã¦ã„ã¾ã›ã‚“"); }
 
 	&get_time;
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -1427,7 +1427,7 @@ sub message {
 		if(($in{'id'} eq $did) and ($in{'pass'} eq $dpass)) { $hit = 1; }
 		if ($hit and $for) { last; }
 	}
-	if (!$hit or !$for) { &error('ˆ¶æ‚ª•s–¾‚Å‚·B‚Ü‚½‚ÍIDAƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·B'); }
+	if (!$hit or !$for) { &error('å®›å…ˆãŒä¸æ˜ã§ã™ã€‚ã¾ãŸã¯IDã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™ã€‚'); }
 	($did,$dpass,$dsite,$durl,$dname) = split(/<>/, $for);
 
 
@@ -1435,25 +1435,25 @@ sub message {
 
 	if($mes_max > $max) { pop(@mes_regist); }
 
-	unshift(@mes_regist,"$in{'mesid'}<>$in{'id'}<>$in{'name'}<>$in{'mes'}<>$dname<>$gettime<>\n");
+	unshift(@mes_regist,"$in{'mesid'}<>$in{'id'}<>$in{'name'}<>$in{'mes'}<>$dname<>$gettime<>Â¥n");
 
 	open(OUT,">$message_file");
 	print OUT @mes_regist;
 	close(OUT);
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&header;
 
 	print <<"EOM";
-<h1>$dname‚³‚ñ‚ÖƒƒbƒZ[ƒW‚ğ‘—‚è‚Ü‚µ‚½B</h1>
+<h1>$dnameã•ã‚“ã¸ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é€ã‚Šã¾ã—ãŸã€‚</h1>
 <hr size=0>
 <form action="$script" method="get">
 <input type=hidden name=mode value=log_in>
 <input type=hidden name=id value="$in{'id'}">
 <input type=hidden name=pass value="$in{'pass'}">
-<input type=submit value="ƒƒOƒCƒ“‰æ–Ê‚Ö–ß‚é">
+<input type=submit value="ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã¸æˆ»ã‚‹">
 </form>
 EOM
 
@@ -1462,7 +1462,7 @@ EOM
 	exit;
 }
 #----------------------#
-#  ƒ‚ƒ“ƒXƒ^[‚Æ‚Ìí“¬  #
+#  ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ã¨ã®æˆ¦é—˜  #
 #----------------------#
 sub monster {
 
@@ -1474,19 +1474,19 @@ sub monster {
 		($kid,$kpass,$ksite,$kurl,$kname,$ksex,$kchara,$kn_0,$kn_1,$kn_2,$kn_3,$kn_4,$kn_5,$kn_6,$ksyoku,$kclass,$khp,$kmaxhp,$kex,$klv,$kgold,$klp,$ktotal,$kkati,$kwaza,$ki_name,$ki_dmg,$kmons,$khost,$kdate) = split(/<>/);
 		if($in{'id'} eq "$kid") { last; }
 	}
-	if (($in{'id'} ne $kid) or ($in{'pass'} ne $kpass)) {&error('IDAƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·');}
+	if (($in{'id'} ne $kid) or ($in{'pass'} ne $kpass)) {&error('IDã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™');}
 
 	$ltime = time();
 	$ltime = $ltime - $kdate;
 	$vtime = $b_time - $ltime;
 	$mtime = $m_time - $ltime;
-	if($in{'id'} ne "$kid") {&error("ƒI[ƒvƒ“ƒGƒ‰[AIDEƒpƒXƒ[ƒh‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB");}
+	if($in{'id'} ne "$kid") {&error("ã‚ªãƒ¼ãƒ—ãƒ³ã‚¨ãƒ©ãƒ¼ã€IDãƒ»ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚");}
 	
 	if($ltime < $m_time and $ktotal) {
-		&error("$mtime•bŒã“¬‚¦‚é‚æ‚¤‚É‚È‚è‚Ü‚·B<br>\n");
+		&error("$mtimeç§’å¾Œé—˜ãˆã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚<br>Â¥n");
 	}
 
-	if(!$kmons) { &error("ˆê“xƒLƒƒƒ‰ƒNƒ^[‚Æ“¬‚Á‚Ä‚­‚¾‚³‚¢"); }
+	if(!$kmons) { &error("ä¸€åº¦ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã¨é—˜ã£ã¦ãã ã•ã„"); }
 
 	open(IN,"<$monster_file");
 	@MONSTER = <IN>;
@@ -1513,62 +1513,62 @@ sub monster {
 		$clit1 = "";
 		$clit2 = "";
 		$com1 = "";
-		$com2 = "$mname‚ªP‚¢‚©‚©‚Á‚½II";
+		$com2 = "$mnameãŒè¥²ã„ã‹ã‹ã£ãŸï¼ï¼";
 		$kawasi1 = "";
 		$kawasi2 = "";
 
-			# ’§íÒƒ_ƒ[ƒWŒvZ
+			# æŒ‘æˆ¦è€…ãƒ€ãƒ¡ãƒ¼ã‚¸è¨ˆç®—
 			if($ksyoku == 0){
 				$dmg1 = $dmg1 + int(rand($kn_0));
-				$com1 = "$kname‚ÍAŒ•‚ÅØ‚è‚Â‚¯‚½II<p>";
+				$com1 = "$knameã¯ã€å‰£ã§åˆ‡ã‚Šã¤ã‘ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 1){
 				$dmg1 = $dmg1 * int(rand($kn_1));
-				$com1 = "$kname‚ÍA–‚–@‚ğ¥‚¦‚½II<p>";
+				$com1 = "$knameã¯ã€é­”æ³•ã‚’å”±ãˆãŸï¼ï¼<p>";
 			}elsif($ksyoku == 2){
 				$dmg1 = $dmg1 * int(rand($kn_2));
-				$com1 = "$kname‚ÍA–‚–@‚ğ¥‚¦‚½II<p>";
+				$com1 = "$knameã¯ã€é­”æ³•ã‚’å”±ãˆãŸï¼ï¼<p>";
 			}elsif($ksyoku == 3){
 				$dmg1 = $dmg1 + int(rand($kn_4));
-				$com1 = "$kname‚ÍA”wŒã‚©‚çØ‚è‚Â‚¯‚½II<p>";
+				$com1 = "$knameã¯ã€èƒŒå¾Œã‹ã‚‰åˆ‡ã‚Šã¤ã‘ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 4){
 				$dmg1 = $dmg1 + int(rand($kn_3)) + int(rand($kn_0));
-				$com1 = "$kname‚ÍA‹|‚ÅUŒ‚II<p>";
+				$com1 = "$knameã¯ã€å¼“ã§æ”»æ’ƒï¼ï¼<p>";
 			}elsif($ksyoku == 5){
 				$dmg1 = $dmg1 * (int(rand($kn_1)) + int(rand($kn_4)));
-				$com1 = "$kname‚ÍA–‚–@‚ğ¥‚¦‚½II<p>";
+				$com1 = "$knameã¯ã€é­”æ³•ã‚’å”±ãˆãŸï¼ï¼<p>";
 			}elsif($ksyoku == 6){
 				$dmg1 = $dmg1 * (int(rand($kn_1)) + int(rand($kn_4)));
-				$com1 = "$kname‚ÍAô‰Ì‚ğ‰Ì‚Á‚½II<p>";
+				$com1 = "$knameã¯ã€å‘ªæ­Œã‚’æ­Œã£ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 7){
 				$dmg1 = $dmg1 * (int(rand($kn_1)) + int(rand($kn_3)));
-				$com1 = "$kname‚ÍA’´”\\—Í‚ğg‚Á‚½II<p>";
+				$com1 = "$knameã¯ã€è¶…èƒ½Â¥åŠ›ã‚’ä½¿ã£ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 8){
 				$dmg1 = $dmg1 * (int(rand($kn_1)) + int(rand($kn_2)));
-				$com1 = "$kname‚ÍA¸—ì–‚–@‚ÆA_¹–‚–@‚ğ“¯‚É¥‚¦‚½II<p>";
+				$com1 = "$knameã¯ã€ç²¾éœŠé­”æ³•ã¨ã€ç¥è–é­”æ³•ã‚’åŒæ™‚ã«å”±ãˆãŸï¼ï¼<p>";
 			}elsif($ksyoku == 9){
 				$dmg1 = $dmg1 + int(rand($kn_0)) + int(rand($kn_2));
-				$com1 = "$kname‚ÍA‘„‚ğ“Ë‚«h‚µ‚½II<p>";
+				$com1 = "$knameã¯ã€æ§ã‚’çªãåˆºã—ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 10){
 				$dmg1 = $dmg1 + int(rand($kn_0)) + int(rand($kn_2));
-				$com1 = "$kname‚ÍA_¹–‚–@‚ğ¥‚¦‚Â‚ÂAŒ•‚ÅØ‚è‚Â‚¯‚½II<p>";
+				$com1 = "$knameã¯ã€ç¥è–é­”æ³•ã‚’å”±ãˆã¤ã¤ã€å‰£ã§åˆ‡ã‚Šã¤ã‘ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 11){
 				$dmg1 = $dmg1 + int(rand($kn_4)) + int(rand($kn_5));
-				$com1 = "$kname‚ÍAŒ©‚¦‚È‚¢‘¬‚³‚ÅØ‚è‚Â‚¯‚½II<p>";
+				$com1 = "$knameã¯ã€è¦‹ãˆãªã„é€Ÿã•ã§åˆ‡ã‚Šã¤ã‘ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 12){
 				$dmg1 = $dmg1 + int(rand($kn_0)) + int(rand($kn_2));
-				$com1 = "$kname‚ÍA‰£‚è‚Â‚¯‚½II<p>";
+				$com1 = "$knameã¯ã€æ®´ã‚Šã¤ã‘ãŸï¼ï¼<p>";
 			}elsif($ksyoku == 13){
 				$dmg1 = $dmg1 + int(rand($kn_0)) + int(rand($kn_2));
-				$com1 = "$kname‚ÍAR‚è‚Â‚¯‚½II<p>";
+				$com1 = "$knameã¯ã€è¹´ã‚Šã¤ã‘ãŸï¼ï¼<p>";
 			}
 
 			if(int(rand(20)) == 0) {
-				$clit1 = "<font size=5>$knameu<b>$kwaza</b>v</font><p><b class=\"clit\">ƒNƒŠƒeƒBƒJƒ‹II</b>";
+				$clit1 = "<font size=5>$knameã€Œ<b>$kwaza</b>ã€</font><p><b class=Â¥"clitÂ¥">ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ï¼ï¼</b>";
 				$dmg1 = $dmg1 * 2;
 			}
 
 			if(int(rand(30)) == 0) {
-				$clit2 = "<b class=\"clit\">ƒNƒŠƒeƒBƒJƒ‹II</b>";
+				$clit2 = "<b class=Â¥"clitÂ¥">ã‚¯ãƒªãƒ†ã‚£ã‚«ãƒ«ï¼ï¼</b>";
 				$dmg2 = int($dmg2 * 1.5);
 			}
 
@@ -1576,7 +1576,7 @@ sub monster {
 <TABLE BORDER=0>
 <TR>
 	<TD CLASS="b2" COLSPAN="3" ALIGN="center">
-	$iƒ^[ƒ“
+	$iã‚¿ãƒ¼ãƒ³
 	</TD>
 </TR>
 <TR>
@@ -1584,13 +1584,13 @@ sub monster {
 <TABLE BORDER=1>
 <TR>
 	<TD CLASS="b1">
-	‚È‚Ü‚¦
+	ãªã¾ãˆ
 	</TD>
 	<TD CLASS="b1">
 	HP
 	</TD>
 	<TD CLASS="b1">
-	E‹Æ
+	è·æ¥­
 	</TD>
 	<TD CLASS="b1">
 	LV
@@ -1601,7 +1601,7 @@ sub monster {
 	$kname
 	</TD>
 	<TD>
-	$khp_flg\/$kmaxhp
+	$khp_flgÂ¥/$kmaxhp
 	</TD>
 	<TD>
 	$chara_syoku[$ksyoku]
@@ -1619,7 +1619,7 @@ sub monster {
 <TABLE BORDER=1>
 <TR>
 	<TD CLASS="b1">
-	‚È‚Ü‚¦
+	ãªã¾ãˆ
 	</TD>
 	<TD CLASS="b1">
 	HP
@@ -1638,8 +1638,8 @@ sub monster {
 </TR>
 </TABLE>
 <p>
-$com1 $clit1 $kawasi2 $mname ‚É <font class="dmg"><b>$dmg1</b></font> ‚Ìƒ_ƒ[ƒW‚ğ—^‚¦‚½B<p>
-$com2 $clit2 $kawasi1 $kname ‚É <font class="dmg"><b>$dmg2</b></font> ‚Ìƒ_ƒ[ƒW‚ğ—^‚¦‚½B<p>
+$com1 $clit1 $kawasi2 $mname ã« <font class="dmg"><b>$dmg1</b></font> ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’ä¸ãˆãŸã€‚<p>
+$com2 $clit2 $kawasi1 $kname ã« <font class="dmg"><b>$dmg2</b></font> ã®ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’ä¸ãˆãŸã€‚<p>
 EOM
 
 		$khp_flg = $khp_flg - $dmg2;
@@ -1659,7 +1659,7 @@ EOM
 		$kmons -= 1;
 		$gold = $klv * 10 + int(rand($klp));
 		$kgold = $kgold + $gold;
-		$comment = "<b><font size=5>$kname‚ÍAí“¬‚ÉŸ—˜‚µ‚½II</font></b><p>";
+		$comment = "<b><font size=5>$knameã¯ã€æˆ¦é—˜ã«å‹åˆ©ã—ãŸï¼ï¼</font></b><p>";
 	}else{
 		$ktotal += 1;
 		$mex = int(rand($klp));
@@ -1667,7 +1667,7 @@ EOM
 		$kmons -= 1;
 		if($kgold) { $kgold = int($kgold / 2); }
 		else { $kgold = 0; }
-		$comment = "<b><font size=5>$kname‚ÍAí“¬‚É•‰‚¯‚½EEEB</font></b><p>";
+		$comment = "<b><font size=5>$knameã¯ã€æˆ¦é—˜ã«è² ã‘ãŸãƒ»ãƒ»ãƒ»ã€‚</font></b><p>";
 	}
 
 	if($kex >= ($klv * $lv_up)) { &lv_up; }
@@ -1680,7 +1680,7 @@ EOM
 
 	&header;
 
-	print "<h1>$kname‚ÍA$mname‚Éí‚¢‚ğ’§‚ñ‚¾II</h1><hr size=0><p>\n";
+	print "<h1>$knameã¯ã€$mnameã«æˆ¦ã„ã‚’æŒ‘ã‚“ã ï¼ï¼</h1><hr size=0><p>Â¥n";
 
 	$i=0;
 	foreach(@battle_date){
@@ -1688,15 +1688,15 @@ EOM
 		$i++;
 	}
 	
-	if($win) { print "$comment<p>$kname‚ÍA$mex‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½B<b>$gold</b>Gè‚É“ü‚ê‚½B<p>\n"; }
-	else { print "$comment<p>$kname‚ÍA$mex‚ÌŒoŒ±’l‚ğè‚É“ü‚ê‚½B‚¨‹à‚ª”¼•ª‚É‚È‚Á‚½B<p>\n"; }
+	if($win) { print "$comment<p>$knameã¯ã€$mexã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸã€‚<b>$gold</b>Gæ‰‹ã«å…¥ã‚ŒãŸã€‚<p>Â¥n"; }
+	else { print "$comment<p>$knameã¯ã€$mexã®çµŒé¨“å€¤ã‚’æ‰‹ã«å…¥ã‚ŒãŸã€‚ãŠé‡‘ãŒåŠåˆ†ã«ãªã£ãŸã€‚<p>Â¥n"; }
 
 	&footer;
 
 	exit;
 }
 #------------------#
-#  ƒ‰ƒ“ƒLƒ“ƒO‰æ–Ê  #
+#  ãƒ©ãƒ³ã‚­ãƒ³ã‚°ç”»é¢  #
 #------------------#
 sub ranking {
 	open(IN,"<$chara_file");
@@ -1719,12 +1719,12 @@ sub ranking {
 	&header;
 
 	print <<"EOM";
-<h1>‰p—Y‚½‚¿‚Ì‹L˜^</h1><hr size=0>
-Œ»İ“o˜^‚³‚ê‚Ä‚¢‚éƒLƒƒƒ‰ƒNƒ^[<b>$sousu</b>l’†ƒŒƒxƒ‹TOP<b>$rank_top</b>‚ğ•\\¦‚µ‚Ä‚¢‚Ü‚·B
+<h1>è‹±é›„ãŸã¡ã®è¨˜éŒ²</h1><hr size=0>
+ç¾åœ¨ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼<b>$sousu</b>äººä¸­ãƒ¬ãƒ™ãƒ«TOP<b>$rank_top</b>ã‚’è¡¨Â¥ç¤ºã—ã¦ã„ã¾ã™ã€‚
 <p>
 <table border=1>
 <tr>
-<th></th><th>‚È‚Ü‚¦</th><th>E‹Æ</th><th>ƒz[ƒ€ƒy[ƒW</th><th>ƒŒƒxƒ‹</th><th>ŒoŒ±’l</th><th>HP</th><th>—Í</th><th>íœ‚Ü‚Å</th>
+<th></th><th>ãªã¾ãˆ</th><th>è·æ¥­</th><th>ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸</th><th>ãƒ¬ãƒ™ãƒ«</th><th>çµŒé¨“å€¤</th><th>HP</th><th>åŠ›</th><th>å‰Šé™¤ã¾ã§</th>
 </tr>
 EOM
 
@@ -1735,20 +1735,20 @@ EOM
 		$rdate = $rdate + (86400*$limit);
 		$niti = $rdate - $ima;
 		$niti = int($niti / 86400);
-		print "<tr>\n";
-		print "<td align=center>$i</td><td>$rname</td><td>$chara_syoku[$rsyoku]</td><td><a href=\"http\:\/\/$rurl\">$rsite</a></td><td align=center>$rlv</td><td align=center>$rex</td><td align=center>$rhp\/$rmaxhp</td><td align=center>$rn_0</td><td align=center>‚ ‚Æ$niti“ú</td>\n";
-		print "</tr>\n";
+		print "<tr>Â¥n";
+		print "<td align=center>$i</td><td>$rname</td><td>$chara_syoku[$rsyoku]</td><td><a href=Â¥"httpÂ¥:Â¥/Â¥/$rurlÂ¥">$rsite</a></td><td align=center>$rlv</td><td align=center>$rex</td><td align=center>$rhpÂ¥/$rmaxhp</td><td align=center>$rn_0</td><td align=center>ã‚ã¨$nitiæ—¥</td>Â¥n";
+		print "</tr>Â¥n";
 		$i++;
 	}
 
-	print "</table><p>\n";
+	print "</table><p>Â¥n";
 
 	&footer;
 
 	exit;
 }
 #--------------------#
-#  ƒ`ƒƒƒ“ƒv“Ç‚İ‚İ  #
+#  ãƒãƒ£ãƒ³ãƒ—èª­ã¿è¾¼ã¿  #
 #--------------------#
 sub read_winner {
 	open(IN,"<$winner_file");
@@ -1759,7 +1759,7 @@ sub read_winner {
 }
 
 #----------------#
-#  ‘‚«‚İˆ—  #
+#  æ›¸ãè¾¼ã¿å‡¦ç†  #
 #----------------#
 sub regist {
 	&set_cookie;
@@ -1768,7 +1768,7 @@ sub regist {
 
 	$date = time();
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -1780,13 +1780,13 @@ sub regist {
 	foreach(@regist){
 		($cid,$cpass,$csite,$curl,$cname,$csex,$cchara,$cn_0,$cn_1,$cn_2,$cn_3,$cn_4,$cn_5,$cn_6,$csyoku,$cclass,$chp,$cmaxhp,$cex,$clv,$cgold,$clp,$ctotal,$ckati,$cwaza,$ci_name,$ci_dmg,$cmons,$chost,$cdate) = split(/<>/);
 		if($cid eq "$in{'id'}" and $in{'new'} eq 'new') {
-			&error("‚»‚ÌID‚Í‚·‚Å‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·");
+			&error("ãã®IDã¯ã™ã§ã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã™");
 		}elsif($curl eq "$in{'url'}" and $in{'new'} eq 'new'){
-			&error("‚»‚ÌURL‚Í‚·‚Å‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·");
+			&error("ãã®URLã¯ã™ã§ã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã™");
 		}elsif($host eq "$chost" and $in{'new'} eq 'new'){
-			&error("‚Pl‚PƒLƒƒƒ‰ƒNƒ^[‚Å‚·B");
+			&error("ï¼‘äººï¼‘ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã§ã™ã€‚");
 		}elsif($cid eq "$kid"){
-			unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>\n");
+			unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>Â¥n");
 			$hit=1;
 		}else{
 			if(($date - $cdate) > (86400 * $limit)) { &del_message($cid);next; }
@@ -1796,7 +1796,7 @@ sub regist {
 
 	if(!$hit and $in{'new'} eq 'new'){
 		$g = $in{'n_0'} + $in{'n_1'} + $in{'n_2'} + $in{'n_3'} + $in{'n_4'} + $in{'n_5'} + $in{'n_6'};
-		if($g > 10) { &error("ƒ|ƒCƒ“ƒg‚ÌU‚è•ª‚¯‚ª‘½‚·‚¬‚Ü‚·BU‚è•ª‚¯‚Ì‡Œv‚ğA10ˆÈ‰º‚É‚µ‚Ä‚­‚¾‚³‚¢B"); }
+		if($g > 10) { &error("ãƒã‚¤ãƒ³ãƒˆã®æŒ¯ã‚Šåˆ†ã‘ãŒå¤šã™ãã¾ã™ã€‚æŒ¯ã‚Šåˆ†ã‘ã®åˆè¨ˆã‚’ã€10ä»¥ä¸‹ã«ã—ã¦ãã ã•ã„ã€‚"); }
 
 		open(IN,"<$syoku_file");
 		@syokudata = <IN>;
@@ -1816,7 +1816,7 @@ sub regist {
 
 		if($kn[0]<$a||$kn[1]<$b||$kn[2]<$c||$kn[3]<$d||$kn[4]<$e||$kn[5]<$f||$kn[6]<$h){
 			if($in{'syoku'}){
-				&error('‚»‚ÌE‹Æ‚É‚È‚é‚½‚ß‚ÌƒXƒe[ƒ^ƒX‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·');
+				&error('ãã®è·æ¥­ã«ãªã‚‹ãŸã‚ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãŒä¸è¶³ã—ã¦ã„ã¾ã™');
 			}
 		}
 
@@ -1836,23 +1836,23 @@ sub regist {
 		$ksyoku = $c_syoku;
 		$klv=1;
 		&class;
-		unshift(@new,"$in{'id'}<>$in{'pass'}<>$in{'site'}<>$in{'url'}<>$in{'c_name'}<>$in{'sex'}<>$in{'chara'}<>$n_0<>$n_1<>$n_2<>$n_3<>$n_4<>$n_5<>$n_6<>$c_syoku<>$kclass<>$hp<>$hp<>$ex<>$lv<>$gold<>$lp<>$total<>$kati<>$waza<><>0<>$sentou_limit<>$host<>$date<>\n");
+		unshift(@new,"$in{'id'}<>$in{'pass'}<>$in{'site'}<>$in{'url'}<>$in{'c_name'}<>$in{'sex'}<>$in{'chara'}<>$n_0<>$n_1<>$n_2<>$n_3<>$n_4<>$n_5<>$n_6<>$c_syoku<>$kclass<>$hp<>$hp<>$ex<>$lv<>$gold<>$lp<>$total<>$kati<>$waza<><>0<>$sentou_limit<>$host<>$date<>Â¥n");
 	}
 
 	open(OUT,">$chara_file");
 	print OUT @new;
 	close(OUT);
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	if($in{'new'}) { &make_end; }
 }
 #------------------#
-#  ƒNƒbƒL[‚Ì”­s  #
+#  ã‚¯ãƒƒã‚­ãƒ¼ã®ç™ºè¡Œ  #
 #------------------#
 sub set_cookie {
-	# ƒNƒbƒL[‚Í60“úŠÔ—LŒø
+	# ã‚¯ãƒƒã‚­ãƒ¼ã¯60æ—¥é–“æœ‰åŠ¹
 	$ENV{'TZ'} = "JST-9";
 	($sec,$min,$hour,$mday,$mon,$year,$wday) = localtime(time+5184000);
 
@@ -1860,14 +1860,14 @@ sub set_cookie {
 	@week=('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
 	$gmt = sprintf("%s, %02d-%s-%04d %02d:%02d:%02d GMT",
 			$week[$wday],$mday,$month[$mon],$year+1900,$hour,$min,$sec);
-	$cook="id<>$cookie_id\,pass<>$cookie_pass";
-	print "Set-Cookie: FFADV=$cook; expires=$gmt\n";
+	$cook="id<>$cookie_idÂ¥,pass<>$cookie_pass";
+	print "Set-Cookie: FFADV=$cook; expires=$gmtÂ¥n";
 }
 #--------#
-#  “]E  #
+#  è»¢è·  #
 #--------#
 sub tensyoku {
-	if($in{'syoku'} eq 'no') { &error("E‹Æ‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢B"); }
+	if($in{'syoku'} eq 'no') { &error("è·æ¥­ã‚’é¸æŠã—ã¦ãã ã•ã„ã€‚"); }
 	$syoku = $in{'syoku'};
 	$id = $in{'id'};
 
@@ -1875,7 +1875,7 @@ sub tensyoku {
 
 	$date = time();
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -1904,14 +1904,14 @@ sub tensyoku {
 	foreach(@tensyoku) {
 		($tid,$tpass,$tsite,$turl,$tname,$tsex,$tchara,$tn_0,$tn_1,$tn_2,$tn_3,$tn_4,$tn_5,$tn_6,$tsyoku,$tclass,$thp,$tmaxhp,$tex,$tlv,$tgold,$tlp,$ttotal,$tkati,$twaza,$ti_name,$ti_dmg,$tmons,$thost,$tdate) = split(/<>/);
 		if($id eq $tid) {
-			if ($tpass ne $in{'pass'}) { &error('ƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·B'); }
+			if ($tpass ne $in{'pass'}) { &error('ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™ã€‚'); }
 			if($tn_0<$a||$tn_1<$b||$tn_2<$c||$tn_3<$d||$tn_4<$e||$tn_5<$f||$tn_6<$g){
-				&error('ƒXƒe[ƒ^ƒX‚ª“]E‚É•K—v‚È’l‚É’B‚µ‚Ä‚¢‚Ü‚¹‚ñ');
+				&error('ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãŒè»¢è·ã«å¿…è¦ãªå€¤ã«é”ã—ã¦ã„ã¾ã›ã‚“');
 			}
 			$ksyoku=$tsyoku;
 			$klv=1;
 			&class;
-			unshift(@ten_new,"$tid<>$tpass<>$tsite<>$turl<>$tname<>$tsex<>$tchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$thp<>$tmaxhp<>$ex<>$lv<>$tgold<>$tlp<>$ttotal<>$tkati<>$twaza<>$ti_name<>$ti_dmg<>$tmons<>$host<>$date<>\n");
+			unshift(@ten_new,"$tid<>$tpass<>$tsite<>$turl<>$tname<>$tsex<>$tchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$thp<>$tmaxhp<>$ex<>$lv<>$tgold<>$tlp<>$ttotal<>$tkati<>$twaza<>$ti_name<>$ti_dmg<>$tmons<>$host<>$date<>Â¥n");
 		}else{
 			push(@ten_new,"$_");
 		}
@@ -1925,23 +1925,23 @@ sub tensyoku {
 
 	if($id eq $wid) {
 		open(OUT,">$winner_file");
-		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$wmaxhp<>$wmaxhp<>$ex<>$lv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$lsite<>$lurl<>$lname<>\n";
+		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$wmaxhp<>$wmaxhp<>$ex<>$lv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$lsite<>$lurl<>$lname<>Â¥n";
 		close(OUT);
 	}
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&header;
 
 	print <<"EOM";
-<h1>“]E‚µ‚Ü‚µ‚½</h1><hr size=0>
+<h1>è»¢è·ã—ã¾ã—ãŸ</h1><hr size=0>
 <p>
 <form action="$script" method="get">
 <input type="hidden" name=id value="$in{'id'}">
 <input type="hidden" name=pass value="$in{'pass'}">
 <input type="hidden" name=mode value=log_in>
-<input type="submit" value="ƒXƒe[ƒ^ƒX‰æ–Ê‚Ö">
+<input type="submit" value="ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢ã¸">
 </form>
 EOM
 
@@ -1950,14 +1950,14 @@ EOM
 	exit;
 }
 #------------#
-#  ‘Ì—Í‰ñ•œ  #
+#  ä½“åŠ›å›å¾©  #
 #------------#
 sub yado {
 	&get_host;
 
 	$date = time();
 
-	# ƒtƒ@ƒCƒ‹ƒƒbƒN
+	# ãƒ•ã‚¡ã‚¤ãƒ«ãƒ­ãƒƒã‚¯
 	if ($lockkey == 1) { &lock1; }
 	elsif ($lockkey == 2) { &lock2; }
 
@@ -1969,11 +1969,11 @@ sub yado {
 	foreach(@YADO){
 		($yid,$ypass,$ysite,$yurl,$yname,$ysex,$ychara,$yn_0,$yn_1,$yn_2,$yn_3,$yn_4,$yn_5,$yn_6,$ysyoku,$yclass,$yhp,$ymaxhp,$yex,$ylv,$ygold,$ylp,$ytotal,$ykati,$ywaza,$yi_name,$yi_dmg,$ymons,$yhost,$ydate) = split(/<>/);
 		if($in{'id'} eq "$yid") {
-			if ($ypass ne $in{'pass'}) { &error('ƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·B'); }
+			if ($ypass ne $in{'pass'}) { &error('ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™ã€‚'); }
 			$yado_gold = $yado_dai * $ylv;
-			if($ygold < $yado_gold) { &error("‚¨‹à‚ª‘«‚è‚Ü‚¹‚ñ"); }
+			if($ygold < $yado_gold) { &error("ãŠé‡‘ãŒè¶³ã‚Šã¾ã›ã‚“"); }
 			else { $ygold = $ygold - $yado_gold; }
-			unshift(@yado_new,"$yid<>$ypass<>$ysite<>$yurl<>$yname<>$ysex<>$ychara<>$yn_0<>$yn_1<>$yn_2<>$yn_3<>$yn_4<>$yn_5<>$yn_6<>$ysyoku<>$yclass<>$ymaxhp<>$ymaxhp<>$yex<>$ylv<>$ygold<>$ylp<>$ytotal<>$ykati<>$ywaza<>$yi_name<>$yi_dmg<>$ymons<>$host<>$ydate<>\n");
+			unshift(@yado_new,"$yid<>$ypass<>$ysite<>$yurl<>$yname<>$ysex<>$ychara<>$yn_0<>$yn_1<>$yn_2<>$yn_3<>$yn_4<>$yn_5<>$yn_6<>$ysyoku<>$yclass<>$ymaxhp<>$ymaxhp<>$yex<>$ylv<>$ygold<>$ylp<>$ytotal<>$ykati<>$ywaza<>$yi_name<>$yi_dmg<>$ymons<>$host<>$ydate<>Â¥n");
 		}else{
 			push(@yado_new,"$_");
 		}
@@ -1987,23 +1987,23 @@ sub yado {
 
 	if($wid eq "$in{'id'}") {
 		open(OUT,">$winner_file");
-		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$wmaxhp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$ydate<>$wcount<>$lsite<>$lurl<>$lname<>\n";
+		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$wmaxhp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$ydate<>$wcount<>$lsite<>$lurl<>$lname<>Â¥n";
 		close(OUT);
 	}
 
-	# ƒƒbƒN‰ğœ
+	# ãƒ­ãƒƒã‚¯è§£é™¤
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&header;
 
 	print <<"EOM";
-<h1>‘Ì—Í‚ğ‰ñ•œ‚µ‚Ü‚µ‚½</h1>
+<h1>ä½“åŠ›ã‚’å›å¾©ã—ã¾ã—ãŸ</h1>
 <hr size=0>
 <form action="$script" method="get">
 <input type=hidden name=mode value=log_in>
 <input type=hidden name=id value="$in{'id'}">
 <input type=hidden name=pass value="$in{'pass'}">
-<input type=submit value="ƒXƒe[ƒ^ƒX‰æ–Ê‚Ö">
+<input type=submit value="ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ç”»é¢ã¸">
 </form>
 EOM
 
@@ -2012,7 +2012,7 @@ EOM
 	exit;
 }
 #------------------#
-#  ƒƒbƒZ[ƒWíœ  #
+#  ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å‰Šé™¤  #
 #------------------#
 sub del_message{
 	open(IN,"<$message_file");
@@ -2031,14 +2031,14 @@ sub del_message{
 	close(OUT);
 }
 #----------------#
-#  ƒŒƒxƒ‹ƒAƒbƒv  #
+#  ãƒ¬ãƒ™ãƒ«ã‚¢ãƒƒãƒ—  #
 #----------------#
 sub lv_up{
-	$comment .= "$kname‚ÍAƒŒƒxƒ‹‚ªã‚ª‚Á‚½II<p>";
+	$comment .= "$knameã¯ã€ãƒ¬ãƒ™ãƒ«ãŒä¸ŠãŒã£ãŸï¼ï¼<p>";
 	$uphp = int(rand($kn_3)) + 1;
 	$kmaxhp = $kmaxhp + $uphp;
 	$khp = $kmaxhp;
-	$comment .= "HP‚ª$uphpã‚ª‚Á‚½B";
+	$comment .= "HPãŒ$uphpä¸ŠãŒã£ãŸã€‚";
 	$kex = 0;
 	$klv += 1;
 	if(int(rand(5)) == 0) { $kn_0 += 1; $t1 = 1;}
@@ -2048,17 +2048,17 @@ sub lv_up{
 	if(int(rand(5)) == 0) { $kn_4 += 1; $t5 = 1;}
 	if(int(rand(5)) == 0) { $kn_5 += 1; $t6 = 1;}
 	if(int(rand(5)) == 0) { $kn_6 += 1; $t7 = 1;}
-	if($t1) { $comment .= "—Í‚ªã‚ª‚Á‚½B"; }
-	if($t2) { $comment .= "’m—Í‚ªã‚ª‚Á‚½B"; }
-	if($t3) { $comment .= "M‹ÂS‚ªã‚ª‚Á‚½B"; }
-	if($t4) { $comment .= "¶–½—Í‚ªã‚ª‚Á‚½B"; }
-	if($t5) { $comment .= "Ší—p‚³‚ªã‚ª‚Á‚½B"; }
-	if($t6) { $comment .= "‘¬‚³‚ªã‚ª‚Á‚½B"; }
-	if($t7) { $comment .= "–£—Í‚ªã‚ª‚Á‚½B"; }
+	if($t1) { $comment .= "åŠ›ãŒä¸ŠãŒã£ãŸã€‚"; }
+	if($t2) { $comment .= "çŸ¥åŠ›ãŒä¸ŠãŒã£ãŸã€‚"; }
+	if($t3) { $comment .= "ä¿¡ä»°å¿ƒãŒä¸ŠãŒã£ãŸã€‚"; }
+	if($t4) { $comment .= "ç”Ÿå‘½åŠ›ãŒä¸ŠãŒã£ãŸã€‚"; }
+	if($t5) { $comment .= "å™¨ç”¨ã•ãŒä¸ŠãŒã£ãŸã€‚"; }
+	if($t6) { $comment .= "é€Ÿã•ãŒä¸ŠãŒã£ãŸã€‚"; }
+	if($t7) { $comment .= "é­…åŠ›ãŒä¸ŠãŒã£ãŸã€‚"; }
 	&class;
 }
 #------------------#
-#  ƒNƒ‰ƒX‘‚«Š·‚¦  #
+#  ã‚¯ãƒ©ã‚¹æ›¸ãæ›ãˆ  #
 #------------------#
 sub class{
 	if($klv >= 42) {
@@ -2108,18 +2108,18 @@ sub class{
 	}
 }
 #------------------#
-# •¶š”‚Ìƒ`ƒFƒbƒN #
+# æ–‡å­—æ•°ã®ãƒã‚§ãƒƒã‚¯ #
 #------------------#
 sub max_strings(){
 	if(length($in{'c_name'}) > $name_maxs){
-		&error("–¼‘O‚Í”¼Šp$name_maxs•¶šˆÈ“à‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢");
+		&error("åå‰ã¯åŠè§’$name_maxsæ–‡å­—ä»¥å†…ã§è¨˜å…¥ã—ã¦ãã ã•ã„");
 	}elsif(length($in{'site'}) > $site_maxs){
-		&error("ƒz[ƒ€ƒy[ƒW–¼‚Í”¼Šp$site_maxs•¶šˆÈ“à‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢");
+		&error("ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸åã¯åŠè§’$site_maxsæ–‡å­—ä»¥å†…ã§è¨˜å…¥ã—ã¦ãã ã•ã„");
 	}elsif(length($in{'url'}) > $url_maxs){
-		&error("ƒz[ƒ€ƒy[ƒW‚Í‚t‚q‚k‚Í”¼Šp$•¶šˆÈ“à‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢");
+		&error("ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã¯ï¼µï¼²ï¼¬ã¯åŠè§’$æ–‡å­—ä»¥å†…ã§è¨˜å…¥ã—ã¦ãã ã•ã„");
 	}elsif(length($in{'waza'}) > $waza_maxs){
-		&error("‹Z”­“®ƒRƒƒ“ƒg‚Í”¼Šp$waza_maxs•¶šˆÈ“à‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢");
+		&error("æŠ€ç™ºå‹•æ™‚ã‚³ãƒ¡ãƒ³ãƒˆã¯åŠè§’$waza_maxsæ–‡å­—ä»¥å†…ã§è¨˜å…¥ã—ã¦ãã ã•ã„");
 	}elsif(length($in{'mes'}) > $mes_maxs){
-		&error("ƒƒbƒZ[ƒW‚Í”¼Šp$mes_maxs•¶šˆÈ“à‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢");
+		&error("ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã¯åŠè§’$mes_maxsæ–‡å­—ä»¥å†…ã§è¨˜å…¥ã—ã¦ãã ã•ã„");
 	}
 }
