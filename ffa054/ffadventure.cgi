@@ -64,7 +64,7 @@ sub battle {
 	if($in{'id'} ne "$kid") {&error("オープンエラー、ID・パスワードが正しくありません。");}
 
 	if($ltime < $b_time and $ktotal) {
-		&error("$vtime秒後闘えるようになります。¥n");
+		&error("$vtime秒後闘えるようになります。\n");
 	}
 
 	&read_winner;
@@ -184,7 +184,7 @@ sub battle {
 				$dmg1 = $dmg1 + int(rand($kn_0)) + int(rand($kn_2)) + $ki_dmg;
 			}
 			if ($hissatu_c >= 0 ) { # 変更を判定。
-				$com1 .= "<font size=5>$kname「<b>$kwaza</b>」</font><p><font color=¥"#CC6699¥" size=5><b>$hissatu[$hissatu_c]</b></font>¥n";
+				$com1 .= "<font size=5>$kname「<b>$kwaza</b>」</font><p><font color=\"#CC6699\" size=5><b>$hissatu[$hissatu_c]</b></font>\n";
 			}
 
 			# チャンプダメージ計算
@@ -222,12 +222,12 @@ sub battle {
 			}
 
 			if(int(rand(20)) == 0) {
-				$clit1 = "<b class=¥"clit¥">クリティカル！！</b>";
+				$clit1 = "<b class=\"clit\">クリティカル！！</b>";
 				$dmg1 = $dmg1 * 2;
 			}
 
 			if(int(rand(30)) == 0) {
-				$clit2 = "<font size=5>$wname「<b>$wwaza</b>」</font><p><b class=¥"clit¥">クリティカル！！</b>";
+				$clit2 = "<font size=5>$wname「<b>$wwaza</b>」</font><p><b class=\"clit\">クリティカル！！</b>";
 				$dmg2 = int($dmg2 * 1.5);
 			}
 
@@ -275,7 +275,7 @@ sub battle {
 	$kname
 	</TD>
 	<TD>
-	$khp_flg¥/$kmaxhp
+	$khp_flg\/$kmaxhp
 	</TD>
 	<TD>
 	$chara_syoku[$ksyoku]
@@ -310,7 +310,7 @@ sub battle {
 	$wname
 	</TD>
 	<TD>
-	$whp_flg¥/$wmaxhp
+	$whp_flg\/$wmaxhp
 	</TD>
 	<TD>
 	$chara_syoku[$wsyoku]
@@ -373,7 +373,7 @@ EOM
 		@new=();
 		open(OUT,">$winner_file");
 		@winnew = <IN>;
-		unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>$win<>$wsite<>$wurl<>$wname<>¥n");
+		unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>$win<>$wsite<>$wurl<>$wname<>\n");
 		print OUT @new;
 		close(OUT);
 	}else{
@@ -381,7 +381,7 @@ EOM
 		@new=();
 		open(OUT,">$winner_file");
 		@winnew = <IN>;
-		unshift(@new,"$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$whp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$ksite<>$kurl<>$kname<>¥n");
+		unshift(@new,"$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$whp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$ksite<>$kurl<>$kname<>\n");
 		print OUT @new;
 		close(OUT);
 
@@ -393,7 +393,7 @@ EOM
 
 		if($wcount > $count) {
 			open(OUT,">$recode_file");
-			print OUT "$wcount<>$wname<>$wsite<>$wurl<>¥n";
+			print OUT "$wcount<>$wname<>$wsite<>$wurl<>\n";
 			close(OUT);
 		}
 	}
@@ -405,7 +405,7 @@ EOM
 
 	if($refresh and !$win) { &header2; } else { &header; }
 
-	print "<h1>$knameは、$wnameに戦いを挑んだ！！</h1><hr size=0><p>¥n";
+	print "<h1>$knameは、$wnameに戦いを挑んだ！！</h1><hr size=0><p>\n";
 
 	$i=0;
 	foreach(@battle_date){
@@ -413,7 +413,7 @@ EOM
 		$i++;
 	}
 
-	print "$comment<p>$knameは、<b>$exp</b>の経験値を手に入れた。<b>$gold</b>G手に入れた。<p>¥n";
+	print "$comment<p>$knameは、<b>$exp</b>の経験値を手に入れた。<b>$gold</b>G手に入れた。<p>\n";
 
 	&footer;
 
@@ -463,7 +463,7 @@ EOM
 
 	$i=0;
 	foreach(@chara_name){
-		print "<option value=¥"$i¥">$chara_name[$i]¥n";
+		print "<option value=\"$i\">$chara_name[$i]\n";
 		$i++;
 	}
 
@@ -471,24 +471,24 @@ EOM
 </select><br><small>△作成するキャラクターの画像を選択してください。(<a href="$chara_list" target="_blank">画像一覧</a>)</small></td>
 </tr>
 <tr>
-<td class="b1">キャラクターの能¥力</td>
+<td class="b1">キャラクターの能\力</td>
 <td>
 	<table border=1>
 	<tr>
-	<td class="b2" width="70">力</td><td class="b2" width="70">知能¥</td><td class="b2" width="70">信仰心</td><td class="b2" width="70">生命力</td><td class="b2" width="70">器用さ</td><td class="b2" width="70">速さ</td><td class="b2" width="70">魅力</td>
+	<td class="b2" width="70">力</td><td class="b2" width="70">知能\</td><td class="b2" width="70">信仰心</td><td class="b2" width="70">生命力</td><td class="b2" width="70">器用さ</td><td class="b2" width="70">速さ</td><td class="b2" width="70">魅力</td>
 	</tr>
 	<tr>
 EOM
 
 	$i=0;$j=0;
 	foreach(0..6){
-		print "<td>$kiso_nouryoku[$i] + <select name=n_$i>¥n";
+		print "<td>$kiso_nouryoku[$i] + <select name=n_$i>\n";
 		foreach(0..10){
-			print "<option value=¥"$j¥">$j¥n";
+			print "<option value=\"$j\">$j\n";
 			$j++;
 		}
-		print "</select>¥n";
-		print "</td>¥n";
+		print "</select>\n";
+		print "</td>\n";
 		$i++;$j=0;
 	}
 
@@ -521,25 +521,25 @@ sub decode {
 	@pairs = split(/&/, $buffer);
 	foreach (@pairs) {
 		($name,$value) = split(/=/, $_);
-		$value =‾ tr/+/ /;
-		$value =‾ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
+		$value =~ tr/+/ /;
+		$value =~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
 
 		# 文字コードをシフトJIS変換
 		&jcode'convert(*value, "sjis", "", "z");
 
 		# タグ処理
-		$value =‾ s/</&lt;/g;
-		$value =‾ s/>/&gt;/g;
-		$value =‾ s/¥"/&quot;/g;
+		$value =~ s/</&lt;/g;
+		$value =~ s/>/&gt;/g;
+		$value =~ s/\"/&quot;/g;
 
 		# 改行等処理
-		$value =‾ s/¥r//g;
-		$value =‾ s/¥n//g;
+		$value =~ s/\r//g;
+		$value =~ s/\n//g;
 
 		$in{$name} = $value;
 	}
 	$mode = $in{'mode'};
-	$in{'url'} =‾ s/^http¥:¥/¥///;
+	$in{'url'} =~ s/^http\:\/\///;
 	$cookie_pass = $in{'pass'};
 	$cookie_id = $in{'id'};
 }
@@ -551,10 +551,10 @@ sub error {
 	if(-e $lockfile) { unlink($lockfile); }
 
 	&header;
-	print "<center><hr width=400><h3>ERROR !</h3>¥n";
-	print "<P><font color=red><B>$_[0]</B></font>¥n";
-	print "<P><hr width=400></center>¥n";
-	print "</body></html>¥n";
+	print "<center><hr width=400><h3>ERROR !</h3>\n";
+	print "<P><font color=red><B>$_[0]</B></font>\n";
+	print "<P><hr width=400></center>\n";
+	print "</body></html>\n";
 	exit;
 }
 #------------------#
@@ -562,18 +562,18 @@ sub error {
 #------------------#
 sub footer {
 	if($refresh and !$win and $mode eq 'battle') {
-		print "【<b><a href=¥"http¥:¥/¥/$wurl¥">チャンプのホームページへ</a></b>】¥n";
+		print "【<b><a href=\"http\:\/\/$wurl\">チャンプのホームページへ</a></b>】\n";
 	}else{
 		if($mode ne ""){
-			print "<a href=¥"$script¥">TOPページへ</a>¥n";
+			print "<a href=\"$script\">TOPページへ</a>\n";
 		}
 		if($kid and $mode ne 'log_in' and $mode ne 'tensyoku' and $mode ne 'yado') {
-			print " / <a href=¥"$script?mode=log_in&id=$kid&pass=$kpass¥">ステータス画面へ</a>¥n";
+			print " / <a href=\"$script?mode=log_in&id=$kid&pass=$kpass\">ステータス画面へ</a>\n";
 		}
 	}
-	print "<HR SIZE=0 WIDTH=¥"100%¥"><DIV align=right class=small>¥n";
-	print "$ver by <a href=¥"http://www.smat.ne.jp/‾ffa/index.html¥">FFA開発室</a><br>¥n";
-	print "</DIV>¥n";
+	print "<HR SIZE=0 WIDTH=\"100%\"><DIV align=right class=small>\n";
+	print "$ver by <a href=\"http://www.smat.ne.jp/~ffa/index.html\">FFA開発室</a><br>\n";
+	print "</DIV>\n";
 
 	if($mode eq 'log_in' and $ltime < $b_time and $ktotal){
 	print <<"EOM";
@@ -584,7 +584,7 @@ window.setTimeout('CountDown()',100);
 </SCRIPT>
 EOM
 	}
-	print "</body></html>¥n";
+	print "</body></html>\n";
 }
 #------------------#
 #  クッキーを取得  #
@@ -593,10 +593,10 @@ sub get_cookie {
 	@pairs = split(/;/, $ENV{'HTTP_COOKIE'});
 	foreach (@pairs) {
 		local($key,$val) = split(/=/);
-		$key =‾ s/¥s//g;
+		$key =~ s/\s//g;
 		$GET{$key} = $val;
 	}
-	@pairs = split(/¥,/, $GET{'FFADV'});
+	@pairs = split(/\,/, $GET{'FFADV'});
 	foreach (@pairs) {
 		local($key,$val) = split(/<>/);
 		$COOK{$key} = $val;
@@ -613,7 +613,7 @@ sub get_host {
 	if ($get_remotehost) {
 		$host = $ENV{'REMOTE_HOST'};
 		if ($host eq "" || $host eq "$addr") {
-			$host = gethostbyaddr(pack("C4", split(/¥./, $addr)), 2);
+			$host = gethostbyaddr(pack("C4", split(/\./, $addr)), 2);
 		}
 	}
 
@@ -635,9 +635,9 @@ sub get_time {
 #  HTMLのヘッダー  #
 #------------------#
 sub header {
-	print "Cache-Control: no-cache¥n";
-	print "Pragma: no-cache¥n";
-	print "Content-type: text/html¥n¥n";
+	print "Cache-Control: no-cache\n";
+	print "Pragma: no-cache\n";
+	print "Content-type: text/html\n\n";
 	print <<"EOM";
 <html>
 <head>
@@ -679,19 +679,19 @@ a:hover { color: $alink }
 -->
 </STYLE>
 EOM
-	print "<title>$main_title</title></head>¥n";
-	print "<body background=¥"$backgif¥" bgcolor=¥"$bgcolor¥" text=¥"$text¥" link=¥"$link¥" vlink=¥"$vlink¥" alink=¥"$alink¥">¥n";
+	print "<title>$main_title</title></head>\n";
+	print "<body background=\"$backgif\" bgcolor=\"$bgcolor\" text=\"$text\" link=\"$link\" vlink=\"$vlink\" alink=\"$alink\">\n";
 }
 #--------------#
 #  強制送還用  #
 #--------------#
 sub header2 {
-	print "Content-type: text/html¥n¥n";
+	print "Content-type: text/html\n\n";
 	print <<"EOM";
 <html>
 <head>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-<META http-equiv="refresh" content="$refresh;URL=http¥:¥/¥/$wurl">
+<META http-equiv="refresh" content="$refresh;URL=http\:\/\/$wurl">
 <STYLE type="text/css">
 <!--
 body,tr,td,th { font-size: $b_size }
@@ -705,8 +705,8 @@ a:hover { color: $alink }
 -->
 </STYLE>
 EOM
-	print "<title>$main_title</title></head>¥n";
-	print "<body background=¥"$backgif¥" bgcolor=¥"$bgcolor¥" text=¥"$text¥" link=¥"$link¥" vlink=¥"$vlink¥" alink=¥"$alink¥">¥n";
+	print "<title>$main_title</title></head>\n";
+	print "<body background=\"$backgif\" bgcolor=\"$bgcolor\" text=\"$text\" link=\"$link\" vlink=\"$vlink\" alink=\"$alink\">\n";
 }
 #-----------------#
 #  TOPページ表示  #
@@ -762,7 +762,7 @@ sub html_top {
 </form>
 $kanri_message
 <p>
-現在の連勝記録は、$rnameさんの「<A HREF=¥"http¥:¥/¥/$rurl¥" TARGET=¥"_blank¥"><FONT SIZE=¥"3¥" COLOR=¥"#6666BB¥">$rsite</FONT></A>」、$rcount連勝です。新記録を出したサイト名の横には、<IMG SRC="$mark">マークがつきます。
+現在の連勝記録は、$rnameさんの「<A HREF=\"http\:\/\/$rurl\" TARGET=\"_blank\"><FONT SIZE=\"3\" COLOR=\"#6666BB\">$rsite</FONT></A>」、$rcount連勝です。新記録を出したサイト名の横には、<IMG SRC="$mark">マークがつきます。
 <table border=0 width='100%'>
 <tr>
 <td width="500" valign="top">
@@ -772,16 +772,16 @@ $kanri_message
 	</tr>
 	<tr>
 	<td align="center" class="b1">ホームページ</td>
-	<td colspan="4"><a href="http¥:¥/¥/$wurl"><b>$wsite</b></a>
+	<td colspan="4"><a href="http\:\/\/$wurl"><b>$wsite</b></a>
 EOM
 	if($rurl eq "$wurl") {
-		print "<IMG SRC=¥"$mark¥" border=0>¥n";
+		print "<IMG SRC=\"$mark\" border=0>\n";
 	}
 	print <<"EOM";
 	</td>
 	</tr>
 	<tr>
-	<td align="center" rowspan="8"><img src="$img_path/$chara_img[$wchara]"><p>勝率：$ritu¥%<br>武器：$wi_name</td>
+	<td align="center" rowspan="8"><img src="$img_path/$chara_img[$wchara]"><p>勝率：$ritu\%<br>武器：$wi_name</td>
 	<td align="center" class="b1">なまえ</td><td><b>$wname</b></td>
 	<td align="center" class="b1">性別</td><td><b>$esex</b></td>
 	</tr>
@@ -795,11 +795,11 @@ EOM
 	</tr>
 	<tr>
 	<td align="center" class="b1">お金</td><td><b>$wgold</b></td>
-	<td align="center" class="b1">HP</td><td><b>$whp¥/$wmaxhp</b></td>
+	<td align="center" class="b1">HP</td><td><b>$whp\/$wmaxhp</b></td>
 	</tr>
 	<tr>
 	<td align="center" class="b1">力</td><td><b>$wn_0</b></td>
-	<td align="center" class="b1">知能¥</td><td><b>$wn_1</b></td>
+	<td align="center" class="b1">知能\</td><td><b>$wn_1</b></td>
 	</tr>
 	<tr>
 	<td align="center" class="b1">信仰心</td><td><b>$wn_2</b></td>
@@ -814,7 +814,7 @@ EOM
 	<td align="center" class="b1">カルマ</td><td><b>$wlp</b></td>
 	</tr>
 	<tr>
-	<td colspan=5 align="center">$lname の <A HREF=¥"http¥:¥/¥/$lurl¥" TARGET=¥"_blank¥">$lsite</A> に勝利！！</td>
+	<td colspan=5 align="center">$lname の <A HREF=\"http\:\/\/$lurl\" TARGET=\"_blank\">$lsite</A> に勝利！！</td>
 	</tr>
 	</table>
 </td>
@@ -826,7 +826,7 @@ EOM
 <LI>そこであなたの行動を選択することができます。
 <LI>一度キャラクターを作成したら、右上のところからログインして遊びます。新規にキャラクターを作れるのは、一人に一つのキャラクターのみです。
 <LI>これは、HPバトラーではなく、キャラバトラーです。キャラクターを育てていくゲームです。
-<LI>能¥力を振り分けることができキャラクターの能¥力をご自分で決めることができます。(ここで決めた能¥力はごくまれにしか上昇しないので、慎重に)
+<LI>能\力を振り分けることができキャラクターの能\力をご自分で決めることができます。(ここで決めた能\力はごくまれにしか上昇しないので、慎重に)
 <LI><b>$limit日</b>以上闘わなければ、キャラクターのデータが削除されます。
 <LI>一度戦闘すると<b>$b_time</b>秒経過しないと再び戦闘できません。
 </OL>
@@ -891,7 +891,7 @@ sub item_buy {
 			if ($ipass ne $item_pass) { &error('パスワードが違います。'); }
 			if($igold < $i_gold) { &error("お金が足りません"); }
 			else { $igold = $igold - $i_gold; }
-			unshift(@item_new,"$iid<>$ipass<>$isite<>$iurl<>$iname<>$isex<>$ichara<>$in_0<>$in_1<>$in_2<>$in_3<>$in_4<>$in_5<>$in_6<>$isyoku<>$iclass<>$imaxhp<>$imaxhp<>$iex<>$ilv<>$igold<>$ilp<>$itotal<>$ikati<>$iwaza<>$i_name<>$i_dmg<>$imons<>$host<>$idate<>¥n");
+			unshift(@item_new,"$iid<>$ipass<>$isite<>$iurl<>$iname<>$isex<>$ichara<>$in_0<>$in_1<>$in_2<>$in_3<>$in_4<>$in_5<>$in_6<>$isyoku<>$iclass<>$imaxhp<>$imaxhp<>$iex<>$ilv<>$igold<>$ilp<>$itotal<>$ikati<>$iwaza<>$i_name<>$i_dmg<>$imons<>$host<>$idate<>\n");
 			$hit=1;
 		}else{
 			push(@item_new,"$_");
@@ -948,9 +948,9 @@ EOM
 
 	foreach(@item_array){
 		($ino,$iname,$idmg,$igold) = split(/<>/);
-		print "<tr>¥n";
-		print "<td><input type=radio name=item_no value=¥"$ino¥"></td><td align=right>$ino</td><td>$iname</td><td align=center>$idmg</td><td align=center>$igold</td>¥n";
-		print "</tr>¥n";
+		print "<tr>\n";
+		print "<td><input type=radio name=item_no value=\"$ino\"></td><td align=right>$ino</td><td>$iname</td><td align=center>$idmg</td><td align=center>$igold</td>\n";
+		print "</tr>\n";
 	}
 
 	print <<"EOM";
@@ -1056,7 +1056,7 @@ EOM
 </tr>
 <tr>
 <td class="b1">ホームページのURL</td>
-<td colspan="4"><input type="text" name=url value="http¥:¥/¥/$kurl" size=60></td>
+<td colspan="4"><input type="text" name=url value="http\:\/\/$kurl" size=60></td>
 </tr>
 <tr>
 <td colspan="5" class="b2" align="center">キャラクターデータ</td>
@@ -1084,12 +1084,12 @@ EOM
 <td class="b1">お金</td>
 <td>$kgold</td>
 <td class="b1">HP</td>
-<td>$khp¥/$kmaxhp</td>
+<td>$khp\/$kmaxhp</td>
 </tr>
 <tr>
 <td class="b1">力</td>
 <td>$kn_0</td>
-<td class="b1">知能¥</td>
+<td class="b1">知能\</td>
 <td>$kn_1</td>
 </tr>
 <tr>
@@ -1122,9 +1122,9 @@ EOM
 <input type="hidden" name=pass value="$kpass">
 EOM
 	if($ltime >= $b_time or !$ktotal) {
-		print "<input type=¥"submit¥" value=¥"チャンプに挑戦¥">¥n";
+		print "<input type=\"submit\" value=\"チャンプに挑戦\">\n";
 	}else{
-		print "$vtime秒後闘えるようになります。¥n";
+		print "$vtime秒後闘えるようになります。\n";
 	}
 
 	print <<"EOM";
@@ -1148,7 +1148,7 @@ EOM
 	foreach(@syoku){
 		($a,$b,$c,$d,$e,$f,$g) = split(/<>/);
 		if($kn_0 >= $a and $kn_1 >= $b and $kn_2 >= $c and $kn_3 >= $d and $kn_4 >= $e and $kn_5 >= $f and $kn_6 >= $g and $ksyoku != $i) {
-			print "<option value=¥"$i¥">$chara_syoku[$i]¥n";
+			print "<option value=\"$i\">$chara_syoku[$i]\n";
 			$hit=1;
 		}
 		$i++;
@@ -1161,11 +1161,11 @@ EOM
 EOM
 
 	if(!$hit) { print "現在転職できる職業はありません"; }
-	else { print "<input type=submit value=¥"転職する¥">¥n"; }
+	else { print "<input type=submit value=\"転職する\">\n"; }
 
 	print <<"EOM";
 <br>
-　<small>※ 転職すると、全ての能¥力値が転職した職業の初期値になります。また、LVも1になります。</small>
+　<small>※ 転職すると、全ての能\力値が転職した職業の初期値になります。また、LVも1になります。</small>
 </form>
 <form action="$script" method="post">
 【魔物と戦い修行できます】<br>
@@ -1175,9 +1175,9 @@ EOM
 EOM
 
 	if($ltime >= $m_time or !$ktotal) {
-		print "<input type=submit value=¥"モンスターと闘う¥"><br>¥n";
+		print "<input type=submit value=\"モンスターと闘う\"><br>\n";
 	}else{
-		print "$mtime秒後闘えるようになります。<br>¥n";
+		print "$mtime秒後闘えるようになります。<br>\n";
 	}
 
 	$yado_gold = $yado_dai * $klv;
@@ -1207,7 +1207,7 @@ EOM
 	foreach(@MESSAGE) {
 		($did,$dpass,$dsite,$durl,$dname) = split(/<>/);
 		if($kid eq $did) { next; }
-		print "<option value=$did>$dnameさんへ¥n";
+		print "<option value=$did>$dnameさんへ\n";
 	}
 
 	print <<"EOM";
@@ -1222,7 +1222,7 @@ EOM
 </td>
 </tr>
 </table>
-【届いているメッセージ】表¥示数<b>$max_gyo</b>件まで<br>
+【届いているメッセージ】表\示数<b>$max_gyo</b>件まで<br>
 EOM
 
 	open(IN,"<$message_file");
@@ -1234,13 +1234,13 @@ EOM
 		($pid,$hid,$hname,$hmessage,$hhname,$htime) = split(/<>/);
 		if($kid eq "$pid"){
 			if($max_gyo < $i) { last; }
-			print "<hr size=0><small><b>$hnameさん</b>　＞ 「<b>$hmessage</b>」($htime)</small><br>¥n";
+			print "<hr size=0><small><b>$hnameさん</b>　＞ 「<b>$hmessage</b>」($htime)</small><br>\n";
 			$hit=1;$i++;
 		}elsif($kid eq "$hid"){
-			print "<hr size=0><small>$knameさんから$hhnameさんへ　＞ 「$hmessage」($htime)</small><br>¥n";
+			print "<hr size=0><small>$knameさんから$hhnameさんへ　＞ 「$hmessage」($htime)</small><br>\n";
 		}
 	}
-	if(!$hit){ print "<hr size=0>$knameさん宛てのメッセージはありません<p>¥n"; }
+	if(!$hit){ print "<hr size=0>$knameさん宛てのメッセージはありません<p>\n"; }
 	print "<hr size=0><p>";
 
 	&footer;
@@ -1257,9 +1257,9 @@ EOM
 #----------------#
 sub make_end {
 	if($chara_stop){ &error("現在キャラクターの作成登録はできません"); }
-	if ($in{'id'} =‾ m/[^0-9a-zA-Z]/)
+	if ($in{'id'} =~ m/[^0-9a-zA-Z]/)
 	{&error("IDに半角英数字以外の文字が含まれています。"); }
-	if ($in{'pass'} =‾ m/[^0-9a-zA-Z]/)
+	if ($in{'pass'} =~ m/[^0-9a-zA-Z]/)
 	{&error("パスワードに半角英数字以外の文字が含まれています。"); }
 	# 職業未選択の場合
 		if($in{'syoku'} eq "") {
@@ -1276,11 +1276,11 @@ sub make_end {
 
 		&header;
 
-		print "<h1>職業選択画面</h1><hr size=0>¥n";
-		print "あなたがなることができる職業は以下のとおりです。<p>¥n";
-		print "<form action=¥"$script¥" method=¥"post¥">¥n";
-		print "<input type=hidden name=mode value=regist>¥n";
-		print "<select name=syoku>¥n";
+		print "<h1>職業選択画面</h1><hr size=0>\n";
+		print "あなたがなることができる職業は以下のとおりです。<p>\n";
+		print "<form action=\"$script\" method=\"post\">\n";
+		print "<input type=hidden name=mode value=regist>\n";
+		print "<select name=syoku>\n";
 
 		open(IN,"<$syoku_file");
 		@syokudata = <IN>;
@@ -1292,30 +1292,30 @@ sub make_end {
 		foreach(@syokudata){
 			@buffer = split(/<>/);
 			if($kn[0] >= $buffer[0] && $kn[1] >= $buffer[1] && $kn[2] >= $buffer[2] && $kn[3] >= $buffer[3] && $kn[4] >= $buffer[4] && $kn[5] >= $buffer[5] && $kn[6] >= $buffer[6]){
-				print "<option value=¥"$i¥">$chara_syoku[$i]¥n";
+				print "<option value=\"$i\">$chara_syoku[$i]\n";
 				$hit=1;
 				}
 			$i++;
 		}
-		if(!$hit){print "<option value=¥"0¥">$chara_syoku[0]¥n";}
+		if(!$hit){print "<option value=\"0\">$chara_syoku[0]\n";}
 
-		print "</select>¥n";
-		print "<input type=hidden name=new value=new>¥n";
-		print "<input type=hidden name=id value=¥"$in{'id'}¥">¥n";
-		print "<input type=hidden name=pass value=¥"$in{'pass'}¥">¥n";
-		print "<input type=hidden name=site value=¥"$in{'site'}¥">¥n";
-		print "<input type=hidden name=url value=¥"$in{'url'}¥">¥n";
-		print "<input type=hidden name=c_name value=¥"$in{'c_name'}¥">¥n";
-		print "<input type=hidden name=sex value=¥"$in{'sex'}¥">¥n";
-		print "<input type=hidden name=chara value=¥"$in{'chara'}¥">¥n";
-		print "<input type=hidden name=n_0 value=¥"$in{'n_0'}¥">¥n";
-		print "<input type=hidden name=n_1 value=¥"$in{'n_1'}¥">¥n";
-		print "<input type=hidden name=n_2 value=¥"$in{'n_2'}¥">¥n";
-		print "<input type=hidden name=n_3 value=¥"$in{'n_3'}¥">¥n";
-		print "<input type=hidden name=n_4 value=¥"$in{'n_4'}¥">¥n";
-		print "<input type=hidden name=n_5 value=¥"$in{'n_5'}¥">¥n";
-		print "<input type=hidden name=n_6 value=¥"$in{'n_6'}¥">¥n";
-		print "<input type=submit value=¥"この職業でOK¥"></form>¥n";
+		print "</select>\n";
+		print "<input type=hidden name=new value=new>\n";
+		print "<input type=hidden name=id value=\"$in{'id'}\">\n";
+		print "<input type=hidden name=pass value=\"$in{'pass'}\">\n";
+		print "<input type=hidden name=site value=\"$in{'site'}\">\n";
+		print "<input type=hidden name=url value=\"$in{'url'}\">\n";
+		print "<input type=hidden name=c_name value=\"$in{'c_name'}\">\n";
+		print "<input type=hidden name=sex value=\"$in{'sex'}\">\n";
+		print "<input type=hidden name=chara value=\"$in{'chara'}\">\n";
+		print "<input type=hidden name=n_0 value=\"$in{'n_0'}\">\n";
+		print "<input type=hidden name=n_1 value=\"$in{'n_1'}\">\n";
+		print "<input type=hidden name=n_2 value=\"$in{'n_2'}\">\n";
+		print "<input type=hidden name=n_3 value=\"$in{'n_3'}\">\n";
+		print "<input type=hidden name=n_4 value=\"$in{'n_4'}\">\n";
+		print "<input type=hidden name=n_5 value=\"$in{'n_5'}\">\n";
+		print "<input type=hidden name=n_6 value=\"$in{'n_6'}\">\n";
+		print "<input type=submit value=\"この職業でOK\"></form>\n";
 
 		&footer;
 
@@ -1334,7 +1334,7 @@ sub make_end {
 <table border=1>
 <tr>
 <td class="b1">ホームページ</td>
-<td colspan="4"><a href="http¥:¥/¥/$in{'url'}">$in{'site'}</a></td>
+<td colspan="4"><a href="http\:\/\/$in{'url'}">$in{'site'}</a></td>
 </tr>
 <tr>
 <td rowspan="8" align="center"><img src="$img_path/$chara_img[$in{'chara'}]"></td>
@@ -1364,7 +1364,7 @@ sub make_end {
 <tr>
 <td class="b1">力</td>
 <td>$n_0</td>
-<td class="b1">知能¥</td>
+<td class="b1">知能\</td>
 <td>$n_1</td>
 </tr>
 <tr>
@@ -1435,7 +1435,7 @@ sub message {
 
 	if($mes_max > $max) { pop(@mes_regist); }
 
-	unshift(@mes_regist,"$in{'mesid'}<>$in{'id'}<>$in{'name'}<>$in{'mes'}<>$dname<>$gettime<>¥n");
+	unshift(@mes_regist,"$in{'mesid'}<>$in{'id'}<>$in{'name'}<>$in{'mes'}<>$dname<>$gettime<>\n");
 
 	open(OUT,">$message_file");
 	print OUT @mes_regist;
@@ -1483,7 +1483,7 @@ sub monster {
 	if($in{'id'} ne "$kid") {&error("オープンエラー、ID・パスワードが正しくありません。");}
 
 	if($ltime < $m_time and $ktotal) {
-		&error("$mtime秒後闘えるようになります。<br>¥n");
+		&error("$mtime秒後闘えるようになります。<br>\n");
 	}
 
 	if(!$kmons) { &error("一度キャラクターと闘ってください"); }
@@ -1541,7 +1541,7 @@ sub monster {
 				$com1 = "$knameは、呪歌を歌った！！<p>";
 			}elsif($ksyoku == 7){
 				$dmg1 = $dmg1 * (int(rand($kn_1)) + int(rand($kn_3)));
-				$com1 = "$knameは、超能¥力を使った！！<p>";
+				$com1 = "$knameは、超能\力を使った！！<p>";
 			}elsif($ksyoku == 8){
 				$dmg1 = $dmg1 * (int(rand($kn_1)) + int(rand($kn_2)));
 				$com1 = "$knameは、精霊魔法と、神聖魔法を同時に唱えた！！<p>";
@@ -1563,12 +1563,12 @@ sub monster {
 			}
 
 			if(int(rand(20)) == 0) {
-				$clit1 = "<font size=5>$kname「<b>$kwaza</b>」</font><p><b class=¥"clit¥">クリティカル！！</b>";
+				$clit1 = "<font size=5>$kname「<b>$kwaza</b>」</font><p><b class=\"clit\">クリティカル！！</b>";
 				$dmg1 = $dmg1 * 2;
 			}
 
 			if(int(rand(30)) == 0) {
-				$clit2 = "<b class=¥"clit¥">クリティカル！！</b>";
+				$clit2 = "<b class=\"clit\">クリティカル！！</b>";
 				$dmg2 = int($dmg2 * 1.5);
 			}
 
@@ -1601,7 +1601,7 @@ sub monster {
 	$kname
 	</TD>
 	<TD>
-	$khp_flg¥/$kmaxhp
+	$khp_flg\/$kmaxhp
 	</TD>
 	<TD>
 	$chara_syoku[$ksyoku]
@@ -1680,7 +1680,7 @@ EOM
 
 	&header;
 
-	print "<h1>$knameは、$mnameに戦いを挑んだ！！</h1><hr size=0><p>¥n";
+	print "<h1>$knameは、$mnameに戦いを挑んだ！！</h1><hr size=0><p>\n";
 
 	$i=0;
 	foreach(@battle_date){
@@ -1688,8 +1688,8 @@ EOM
 		$i++;
 	}
 
-	if($win) { print "$comment<p>$knameは、$mexの経験値を手に入れた。<b>$gold</b>G手に入れた。<p>¥n"; }
-	else { print "$comment<p>$knameは、$mexの経験値を手に入れた。お金が半分になった。<p>¥n"; }
+	if($win) { print "$comment<p>$knameは、$mexの経験値を手に入れた。<b>$gold</b>G手に入れた。<p>\n"; }
+	else { print "$comment<p>$knameは、$mexの経験値を手に入れた。お金が半分になった。<p>\n"; }
 
 	&footer;
 
@@ -1720,7 +1720,7 @@ sub ranking {
 
 	print <<"EOM";
 <h1>英雄たちの記録</h1><hr size=0>
-現在登録されているキャラクター<b>$sousu</b>人中レベルTOP<b>$rank_top</b>を表¥示しています。
+現在登録されているキャラクター<b>$sousu</b>人中レベルTOP<b>$rank_top</b>を表\示しています。
 <p>
 <table border=1>
 <tr>
@@ -1735,13 +1735,13 @@ EOM
 		$rdate = $rdate + (86400*$limit);
 		$niti = $rdate - $ima;
 		$niti = int($niti / 86400);
-		print "<tr>¥n";
-		print "<td align=center>$i</td><td>$rname</td><td>$chara_syoku[$rsyoku]</td><td><a href=¥"http¥:¥/¥/$rurl¥">$rsite</a></td><td align=center>$rlv</td><td align=center>$rex</td><td align=center>$rhp¥/$rmaxhp</td><td align=center>$rn_0</td><td align=center>あと$niti日</td>¥n";
-		print "</tr>¥n";
+		print "<tr>\n";
+		print "<td align=center>$i</td><td>$rname</td><td>$chara_syoku[$rsyoku]</td><td><a href=\"http\:\/\/$rurl\">$rsite</a></td><td align=center>$rlv</td><td align=center>$rex</td><td align=center>$rhp\/$rmaxhp</td><td align=center>$rn_0</td><td align=center>あと$niti日</td>\n";
+		print "</tr>\n";
 		$i++;
 	}
 
-	print "</table><p>¥n";
+	print "</table><p>\n";
 
 	&footer;
 
@@ -1786,7 +1786,7 @@ sub regist {
 		}elsif($host eq "$chost" and $in{'new'} eq 'new'){
 			&error("１人１キャラクターです。");
 		}elsif($cid eq "$kid"){
-			unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>¥n");
+			unshift(@new,"$kid<>$kpass<>$ksite<>$kurl<>$kname<>$ksex<>$kchara<>$kn_0<>$kn_1<>$kn_2<>$kn_3<>$kn_4<>$kn_5<>$kn_6<>$ksyoku<>$kclass<>$khp<>$kmaxhp<>$kex<>$klv<>$kgold<>$klp<>$ktotal<>$kkati<>$kwaza<>$ki_name<>$ki_dmg<>$kmons<>$host<>$date<>\n");
 			$hit=1;
 		}else{
 			if(($date - $cdate) > (86400 * $limit)) { &del_message($cid);next; }
@@ -1836,7 +1836,7 @@ sub regist {
 		$ksyoku = $c_syoku;
 		$klv=1;
 		&class;
-		unshift(@new,"$in{'id'}<>$in{'pass'}<>$in{'site'}<>$in{'url'}<>$in{'c_name'}<>$in{'sex'}<>$in{'chara'}<>$n_0<>$n_1<>$n_2<>$n_3<>$n_4<>$n_5<>$n_6<>$c_syoku<>$kclass<>$hp<>$hp<>$ex<>$lv<>$gold<>$lp<>$total<>$kati<>$waza<><>0<>$sentou_limit<>$host<>$date<>¥n");
+		unshift(@new,"$in{'id'}<>$in{'pass'}<>$in{'site'}<>$in{'url'}<>$in{'c_name'}<>$in{'sex'}<>$in{'chara'}<>$n_0<>$n_1<>$n_2<>$n_3<>$n_4<>$n_5<>$n_6<>$c_syoku<>$kclass<>$hp<>$hp<>$ex<>$lv<>$gold<>$lp<>$total<>$kati<>$waza<><>0<>$sentou_limit<>$host<>$date<>\n");
 	}
 
 	open(OUT,">$chara_file");
@@ -1860,8 +1860,8 @@ sub set_cookie {
 	@week=('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
 	$gmt = sprintf("%s, %02d-%s-%04d %02d:%02d:%02d GMT",
 			$week[$wday],$mday,$month[$mon],$year+1900,$hour,$min,$sec);
-	$cook="id<>$cookie_id¥,pass<>$cookie_pass";
-	print "Set-Cookie: FFADV=$cook; expires=$gmt¥n";
+	$cook="id<>$cookie_id\,pass<>$cookie_pass";
+	print "Set-Cookie: FFADV=$cook; expires=$gmt\n";
 }
 #--------#
 #  転職  #
@@ -1911,7 +1911,7 @@ sub tensyoku {
 			$ksyoku=$tsyoku;
 			$klv=1;
 			&class;
-			unshift(@ten_new,"$tid<>$tpass<>$tsite<>$turl<>$tname<>$tsex<>$tchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$thp<>$tmaxhp<>$ex<>$lv<>$tgold<>$tlp<>$ttotal<>$tkati<>$twaza<>$ti_name<>$ti_dmg<>$tmons<>$host<>$date<>¥n");
+			unshift(@ten_new,"$tid<>$tpass<>$tsite<>$turl<>$tname<>$tsex<>$tchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$thp<>$tmaxhp<>$ex<>$lv<>$tgold<>$tlp<>$ttotal<>$tkati<>$twaza<>$ti_name<>$ti_dmg<>$tmons<>$host<>$date<>\n");
 		}else{
 			push(@ten_new,"$_");
 		}
@@ -1925,7 +1925,7 @@ sub tensyoku {
 
 	if($id eq $wid) {
 		open(OUT,">$winner_file");
-		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$wmaxhp<>$wmaxhp<>$ex<>$lv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$lsite<>$lurl<>$lname<>¥n";
+		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$a<>$b<>$c<>$d<>$e<>$f<>$g<>$syoku<>$kclass<>$wmaxhp<>$wmaxhp<>$ex<>$lv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$date<>$wcount<>$lsite<>$lurl<>$lname<>\n";
 		close(OUT);
 	}
 
@@ -1973,7 +1973,7 @@ sub yado {
 			$yado_gold = $yado_dai * $ylv;
 			if($ygold < $yado_gold) { &error("お金が足りません"); }
 			else { $ygold = $ygold - $yado_gold; }
-			unshift(@yado_new,"$yid<>$ypass<>$ysite<>$yurl<>$yname<>$ysex<>$ychara<>$yn_0<>$yn_1<>$yn_2<>$yn_3<>$yn_4<>$yn_5<>$yn_6<>$ysyoku<>$yclass<>$ymaxhp<>$ymaxhp<>$yex<>$ylv<>$ygold<>$ylp<>$ytotal<>$ykati<>$ywaza<>$yi_name<>$yi_dmg<>$ymons<>$host<>$ydate<>¥n");
+			unshift(@yado_new,"$yid<>$ypass<>$ysite<>$yurl<>$yname<>$ysex<>$ychara<>$yn_0<>$yn_1<>$yn_2<>$yn_3<>$yn_4<>$yn_5<>$yn_6<>$ysyoku<>$yclass<>$ymaxhp<>$ymaxhp<>$yex<>$ylv<>$ygold<>$ylp<>$ytotal<>$ykati<>$ywaza<>$yi_name<>$yi_dmg<>$ymons<>$host<>$ydate<>\n");
 		}else{
 			push(@yado_new,"$_");
 		}
@@ -1987,7 +1987,7 @@ sub yado {
 
 	if($wid eq "$in{'id'}") {
 		open(OUT,">$winner_file");
-		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$wmaxhp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$ydate<>$wcount<>$lsite<>$lurl<>$lname<>¥n";
+		print OUT "$wid<>$wpass<>$wsite<>$wurl<>$wname<>$wsex<>$wchara<>$wn_0<>$wn_1<>$wn_2<>$wn_3<>$wn_4<>$wn_5<>$wn_6<>$wsyoku<>$wclass<>$wmaxhp<>$wmaxhp<>$wex<>$wlv<>$wgold<>$wlp<>$wtotal<>$wkati<>$wwaza<>$wi_name<>$wi_dmg<>$wmons<>$host<>$ydate<>$wcount<>$lsite<>$lurl<>$lname<>\n";
 		close(OUT);
 	}
 
